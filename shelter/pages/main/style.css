@@ -203,11 +203,110 @@ li {
     font-weight: 400;
     font-size: 15px;
     line-height: 160%;
-    /* or 24px */
     display: flex;
     align-items: center;
-    /* color-dark-xl */
     color: #4C4C4C;
+}
+
+
+/* === pets === */
+
+.pets {
+    position: relative;
+    margin: 0 auto;
+    width: 1280px;
+    height: 877px;
+    background: #F6F6F6;
+}
+
+.pets-container {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 1200px;
+    height: 697px;
+    left: calc(50% - 1200px/2);
+    top: 80px;
+}
+
+.pets-heading {
+    width: 400px;
+    height: 90px;
+    border: 1px solid red;
+}
+
+.pets-heading-text {
+    font-family: 'Georgia';
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    color: #545454;
+    text-align: center;
+    margin: 0px;
+}
+
+.pets-slider {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 1200px;
+    height: 435px;
+    border: 1px solid red;
+}
+
+.button-left {
+    background-image: url(/olvsivkov-JSFE2022Q1/shelter/assets/icons/button_arrow_left.svg);
+    width: 52px;
+    height: 52px;
+}
+
+.pet-katrine {
+    background-image: url(/olvsivkov-JSFE2022Q1/shelter/assets/icons/pets-katrine.svg);
+    background-repeat: no-repeat;
+    width: 270px;
+    height: 435px;
+    left: 105px;
+    top: 0px;
+    /* color-light-s */
+    border-radius: 9px;
+}
+
+.pet-jennifer {
+    background-image: url(/olvsivkov-JSFE2022Q1/shelter/assets/icons/pets-jennifer.svg);
+    background-repeat: no-repeat;
+    width: 270px;
+    height: 435px;
+    left: 465px;
+    top: 0px;
+    /* color-light-s */
+    border-radius: 9px;
+}
+
+.pet-woody {
+    background-image: url(/olvsivkov-JSFE2022Q1/shelter/assets/icons/pets-woody.svg);
+    background-repeat: no-repeat;
+    width: 270px;
+    height: 435px;
+    left: 465px;
+    top: 0px;
+    /* color-light-s */
+    border-radius: 9px;
+}
+
+.button-right {
+    background-image: url(/olvsivkov-JSFE2022Q1/shelter/assets/icons/button_arrow_right.svg);
+    width: 52px;
+    height: 52px;
+}
+
+.pets-button {
+    width: 261px;
+    height: 52px;
+    border: 1px solid red;
 }
 
 
