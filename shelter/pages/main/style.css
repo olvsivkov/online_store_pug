@@ -137,13 +137,86 @@ li {
     bottom: 0px;
 }
 
+.btn-start:hover {
+    background: #f3aa76;
+    text-decoration: underline;
+}
+
+.btn-start:active {
+    background: #f1d8c6;
+}
+
+
+/* === about === */
+
+.about {
+    position: relative;
+    margin: 0 auto;
+    width: 1280px;
+    height: 588px;
+    left: 0%;
+    right: 0%;
+    background: #FFFFFF;
+}
+
+.about-container {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 1200px;
+    height: 408px;
+    left: calc(50% - 1200px/2);
+    top: calc(50% - 408px/2 - 10px);
+}
+
+.cat-dog {
+    background-image: url(/olvsivkov-JSFE2022Q1/shelter/assets/imgs/about-pets.svg);
+    width: 300px;
+    height: 408px;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 430px;
+    height: 380px;
+    margin: 14px 0;
+}
+
+.about-heading {
+    width: 370px;
+    height: 90px;
+    font-family: 'Georgia';
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 130%;
+    margin: 0px;
+    letter-spacing: 0.06em;
+    color: #545454;
+}
+
+.about-subheading {
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 160%;
+    /* or 24px */
+    display: flex;
+    align-items: center;
+    /* color-dark-xl */
+    color: #4C4C4C;
+}
+
 
 /* === button ===*/
 
 .button {
     font-family: 'Georgia';
     font-size: 17px;
-    line-height: 270%;
+    line-height: 300%;
     letter-spacing: 0.06em;
     color: #2c2518;
     text-decoration: none;
