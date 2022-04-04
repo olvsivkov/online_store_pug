@@ -129,21 +129,12 @@ li {
     color: #CDCDCD;
 }
 
-.pet-img {
+.pet-img-start {
     background-image: url(/olvsivkov-JSFE2022Q1/shelter/assets/imgs/start-screen-puppy.svg);
     width: 698px;
     height: 728px;
     left: calc(50% - 698px/2 + 251px);
     bottom: 0px;
-}
-
-.btn-start:hover {
-    background: #f3aa76;
-    text-decoration: underline;
-}
-
-.btn-start:active {
-    background: #f1d8c6;
 }
 
 
@@ -234,7 +225,6 @@ li {
 .pets-heading {
     width: 400px;
     height: 90px;
-    border: 1px solid red;
 }
 
 .pets-heading-text {
@@ -255,62 +245,76 @@ li {
     align-items: center;
     width: 1200px;
     height: 435px;
-    border: 1px solid red;
 }
 
 .button-left {
     background-image: url(/olvsivkov-JSFE2022Q1/shelter/assets/icons/button_arrow_left.svg);
     width: 52px;
     height: 52px;
+    border: 1px solid #F1CDB3;
+    border-radius: 100px;
 }
 
-.pet-katrine {
-    background-image: url(/olvsivkov-JSFE2022Q1/shelter/assets/icons/pets-katrine.svg);
-    background-repeat: no-repeat;
+.pet-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     width: 270px;
     height: 435px;
-    left: 105px;
-    top: 0px;
-    /* color-light-s */
+    background: #FAFAFA;
     border-radius: 9px;
 }
 
-.pet-jennifer {
-    background-image: url(/olvsivkov-JSFE2022Q1/shelter/assets/icons/pets-jennifer.svg);
+.pet-img {
     background-repeat: no-repeat;
     width: 270px;
-    height: 435px;
-    left: 465px;
-    top: 0px;
-    /* color-light-s */
-    border-radius: 9px;
+    height: 270px;
 }
 
-.pet-woody {
-    background-image: url(/olvsivkov-JSFE2022Q1/shelter/assets/icons/pets-woody.svg);
-    background-repeat: no-repeat;
-    width: 270px;
-    height: 435px;
-    left: 465px;
-    top: 0px;
-    /* color-light-s */
-    border-radius: 9px;
+.pet-name {
+    font-family: 'Georgia';
+    font-size: 20px;
+    letter-spacing: 0.06em;
+    color: #545454;
+}
+
+.pet-info {
+    width: 207px;
+    height: 52px;
+    margin-bottom: 30px;
 }
 
 .button-right {
     background-image: url(/olvsivkov-JSFE2022Q1/shelter/assets/icons/button_arrow_right.svg);
     width: 52px;
     height: 52px;
+    border: 1px solid #F1CDB3;
+    border-radius: 100px;
 }
 
 .pets-button {
     width: 261px;
     height: 52px;
-    border: 1px solid red;
 }
 
 
-/* === button ===*/
+/* === link to pets images === */
+
+.katrine {
+    background-image: url(/olvsivkov-JSFE2022Q1/shelter/assets/icons/pets-katrine.svg);
+}
+
+.jennifer {
+    background-image: url(/olvsivkov-JSFE2022Q1/shelter/assets/icons/pets-jennifer.svg);
+}
+
+.woody {
+    background-image: url(/olvsivkov-JSFE2022Q1/shelter/assets/icons/pets-woody.svg);
+}
+
+
+/* === buttons styles ===*/
 
 .button {
     font-family: 'Georgia';
@@ -324,4 +328,43 @@ li {
     width: 207px;
     height: 52px;
     text-align: center;
+    display: inline-block;
+}
+
+.btn-start:hover {
+    background: #f3aa76;
+    text-decoration: underline;
+}
+
+.btn-start:active {
+    background: #f1d8c6;
+}
+
+.pet-btn {
+    background-color: #fff;
+    border: 1px solid #F1CDB3;
+}
+
+.pet-btn:hover {
+    background: #F1CDB3;
+    border: 1px solid #F1CDB3;
+    text-decoration: underline;
+}
+
+.pet-btn:active {
+    background: #f1d8c6;
+}
+
+.btn-pets-block {
+    width: 261px;
+    height: 52px;
+}
+
+.btn-pets-block:hover {
+    background: #f3aa76;
+    text-decoration: underline;
+}
+
+.btn-pets-block:active {
+    background: #f1d8c6;
 }
