@@ -436,13 +436,6 @@ li {
     height: 60px;
 }
 
-.flex-items {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-}
-
 .help-list-text {
     font-family: 'Georgia';
     font-size: 20px;
@@ -548,6 +541,132 @@ li {
     font-size: 12px;
     line-height: 18px;
     color: #B2B2B2;
+}
+
+
+/* === footer ===*/
+
+.footer-wrapper {
+    position: relative;
+    width: 1280px;
+    height: 350px;
+    margin: 0 auto;
+    background-image: url(/olvsivkov-JSFE2022Q1/shelter/assets/imgs/footer-background.png);
+}
+
+.footer-content {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 1200px;
+    height: 310px;
+    left: 40px;
+    top: 40px;
+}
+
+.footer-contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 278px;
+    height: 234px;
+}
+
+.footer-title {
+    width: 278px;
+    height: 90px;
+    left: calc(50% - 278px/2 - 0px);
+    top: 0px;
+}
+
+.footer-txt {
+    font-size: 34px;
+    color: #FFFFFF;
+    text-align: start;
+}
+
+.footer-location {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 302px;
+    height: 234px;
+}
+
+.location {
+    width: 302px;
+    height: 46px;
+}
+
+.footer-icon-location {
+    background-image: url(/olvsivkov-JSFE2022Q1/shelter/assets/icons/icon-marker.svg);
+    width: 22px;
+    height: 32px;
+}
+
+.boston {
+    width: 260px;
+    height: 46px;
+}
+
+.london {
+    width: 260px;
+    height: 23px;
+}
+
+.footer-mail {
+    width: 251px;
+    height: 32px;
+}
+
+.footer-icon-email {
+    background-image: url(/olvsivkov-JSFE2022Q1/shelter/assets/icons/icon-email.svg);
+    width: 40px;
+    height: 32px;
+}
+
+.footer-phone {
+    width: 239px;
+    height: 32px;
+}
+
+.footer-icon-phone {
+    background-image: url(/olvsivkov-JSFE2022Q1/shelter/assets/icons/icon-phone.svg);
+    width: 40px;
+    height: 32px;
+}
+
+.footer-puppy {
+    width: 300px;
+    height: 310px;
+    left: calc(50% - 300px/2 + 450px);
+    top: 0px;
+    background-image: url(/olvsivkov-JSFE2022Q1/shelter/assets/icons/footer-puppy.png);
+}
+
+.footer-text-color {
+    color: #F1CDB3;
+}
+
+
+/* === flex items for styles ===*/
+
+.flex-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-item-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
 
