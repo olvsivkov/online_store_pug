@@ -451,6 +451,106 @@ li {
 }
 
 
+/* === donation === */
+
+.donation {
+    position: relative;
+    width: 1280px;
+    height: 462px;
+    margin: 0 auto;
+    background: #F6F6F6;
+}
+
+.donation-container {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 915px;
+    height: 282px;
+    left: calc(50% - 915px/2 + 0.5px);
+    top: 80px;
+}
+
+.donation-dog {
+    background-image: url(/olvsivkov-JSFE2022Q1/shelter/assets/icons/donation-dog.png);
+    width: 505px;
+    height: 261px;
+}
+
+.donation-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 380px;
+    height: 282px;
+}
+
+.donation-subheading {
+    width: 308px;
+    height: 17px;
+}
+
+.donation-heading {
+    text-align: start;
+}
+
+.h5-subheading {
+    font-family: 'Georgia';
+    font-weight: 400;
+    font-size: 15px;
+    letter-spacing: 0.06em;
+    color: #545454;
+    margin: 0px;
+}
+
+.donation-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 349px;
+    height: 43px;
+    background: #F1CDB3;
+    border-radius: 9px;
+}
+
+.card-img {
+    background-image: url(/olvsivkov-JSFE2022Q1/shelter/assets/icons/credit-card.svg);
+    width: 30px;
+    height: 23px;
+}
+
+.card-number {
+    width: 275px;
+    height: 23px;
+}
+
+.h4-card-num {
+    font-family: 'Georgia';
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: 0.06em;
+    color: #545454;
+    margin: 0px;
+}
+
+.donation-info {
+    width: 380px;
+    height: 72px;
+}
+
+.donation-info-text {
+    font-family: 'Arial';
+    font-style: italic;
+    font-size: 12px;
+    line-height: 18px;
+    color: #B2B2B2;
+}
+
+
 /* === buttons styles ===*/
 
 .button {
