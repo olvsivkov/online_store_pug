@@ -44,6 +44,23 @@ body {
     height: 27px;
 }
 
+.nav-text {
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 160%;
+    /* identical to box height, or 24px */
+    /* color-dark-s */
+    color: #CDCDCD;
+    text-decoration: none;
+    margin-bottom: 5px;
+}
+
+.li-hover:hover {
+    border-bottom: 3px solid #fff;
+}
+
 .list {
     display: flex;
     justify-content: space-between;
@@ -255,15 +272,28 @@ li {
     border-radius: 100px;
 }
 
+.btn-slide-hover:hover {
+    border: 1px solid #f8964f;
+    border-radius: 100px;
+    cursor: pointer;
+}
+
 .pet-content {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    width: 270px;
-    height: 435px;
+    width: 272px;
+    height: 437px;
     background: #FAFAFA;
     border-radius: 9px;
+    box-sizing: border-box;
+}
+
+.pet-content:hover {
+    background: #f3aa76;
+    cursor: pointer;
+    border: 1px solid #f3aa76;
 }
 
 .pet-img {
@@ -530,6 +560,11 @@ li {
     margin: 0px;
 }
 
+.card-style {
+    color: #545454;
+    text-decoration: none;
+}
+
 .donation-info {
     width: 380px;
     height: 72px;
@@ -702,8 +737,8 @@ li {
 }
 
 .pet-btn:hover {
-    background: #F1CDB3;
-    border: 1px solid #F1CDB3;
+    background: #f1e2d7;
+    border: 1px solid #f0a672;
     text-decoration: underline;
 }
 
