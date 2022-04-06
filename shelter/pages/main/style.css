@@ -302,7 +302,7 @@ li {
 
 .pet-img {
     background-repeat: no-repeat;
-    width: 270px;
+    width: 269px;
     height: 270px;
 }
 
@@ -689,6 +689,11 @@ li {
 
 .footer-text-color {
     color: #F1CDB3;
+    text-decoration: none;
+}
+
+.footer-text-color:hover {
+    border-bottom: 1px solid #F1CDB3;
 }
 
 
