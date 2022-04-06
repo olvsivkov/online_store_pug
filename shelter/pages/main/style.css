@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    background-image: url(/olvsivkov-JSFE2022Q1/shelter/assets/imgs/start-screen-gradient-background.jpg);
+    background-image: url(./assets_main/img/start-screen-gradient-background.jpg);
     background-size: 100% 100%;
     background-repeat: no-repeat;
 }
@@ -109,7 +109,7 @@ li {
 
 .start {
     position: relative;
-    background-image: url(/olvsivkov-JSFE2022Q1/shelter/assets/imgs/start-screen-gradient-background.jpg );
+    background-image: url(./assets_main/img/start-screen-gradient-background.jpg );
     Width: 1280px;
     Height: 908px;
     margin: 0 auto;
@@ -151,7 +151,7 @@ li {
 }
 
 .pet-img-start {
-    background-image: url(/olvsivkov-JSFE2022Q1/shelter/assets/imgs/start-screen-puppy.svg);
+    background-image: url(./assets_main/img/start-screen-puppy.svg);
     width: 698px;
     height: 728px;
     left: calc(50% - 698px/2 + 251px);
@@ -183,7 +183,7 @@ li {
 }
 
 .cat-dog {
-    background-image: url(/olvsivkov-JSFE2022Q1/shelter/assets/imgs/about-pets.svg);
+    background-image: url(./assets_main/img/about-pets.svg);
     width: 300px;
     height: 408px;
 }
@@ -269,7 +269,7 @@ li {
 }
 
 .button-left {
-    background-image: url(/olvsivkov-JSFE2022Q1/shelter/assets/icons/button_arrow_left.svg);
+    background-image: url(./assets_main/img/button_arrow_left.svg);
     width: 52px;
     height: 52px;
     border: 1px solid #F1CDB3;
@@ -320,7 +320,7 @@ li {
 }
 
 .button-right {
-    background-image: url(/olvsivkov-JSFE2022Q1/shelter/assets/icons/button_arrow_right.svg);
+    background-image: url(./assets_main/img/button_arrow_right.svg);
     width: 52px;
     height: 52px;
     border: 1px solid #F1CDB3;
@@ -336,15 +336,15 @@ li {
 /* === link to pets images === */
 
 .katrine {
-    background-image: url(/olvsivkov-JSFE2022Q1/shelter/assets/icons/pets-katrine.svg);
+    background-image: url(./assets_main/img/pets-katrine.svg);
 }
 
 .jennifer {
-    background-image: url(/olvsivkov-JSFE2022Q1/shelter/assets/icons/pets-jennifer.svg);
+    background-image: url(./assets_main/img/pets-jennifer.svg);
 }
 
 .woody {
-    background-image: url(/olvsivkov-JSFE2022Q1/shelter/assets/icons/pets-woody.svg);
+    background-image: url(./assets_main/img/pets-woody.svg);
 }
 
 
@@ -390,7 +390,7 @@ li {
 }
 
 .icon-pet-food {
-    background-image: url(/olvsivkov-JSFE2022Q1/shelter/assets/icons/icon-pet-food.svg);
+    background-image: url(./assets_main/img/icon-pet-food.svg);
 }
 
 .help-list-item-drive {
@@ -399,7 +399,7 @@ li {
 }
 
 .icon-pet-drive {
-    background-image: url(/olvsivkov-JSFE2022Q1/shelter/assets/icons/icon-transportation.svg);
+    background-image: url(./assets_main/img/icon-transportation.svg);
 }
 
 .help-list-item-toys {
@@ -408,7 +408,7 @@ li {
 }
 
 .icon-pet-toys {
-    background-image: url(/olvsivkov-JSFE2022Q1/shelter/assets/icons/icon-toys.svg);
+    background-image: url(./assets_main/img/icon-toys.svg);
 }
 
 .help-list-item-blow {
@@ -417,7 +417,7 @@ li {
 }
 
 .icon-pet-blow {
-    background-image: url(/olvsivkov-JSFE2022Q1/shelter/assets/icons/icon-bowls-and-cups.svg);
+    background-image: url(./assets_main/img/icon-bowls-and-cups.svg);
 }
 
 .help-list-item-shampoos {
@@ -426,7 +426,7 @@ li {
 }
 
 .icon-pet-shampoos {
-    background-image: url(/olvsivkov-JSFE2022Q1/shelter/assets/icons/icon-shampoos.svg);
+    background-image: url(./assets_main/img/icon-shampoos.svg);
 }
 
 .help-list-item-vitamins {
@@ -435,7 +435,7 @@ li {
 }
 
 .icon-pet-vitamins {
-    background-image: url(/olvsivkov-JSFE2022Q1/shelter/assets/icons/icon-vitamins.svg);
+    background-image: url(./assets_main/img/icon-vitamins.svg);
 }
 
 .help-list-item-medicines {
@@ -444,7 +444,7 @@ li {
 }
 
 .icon-pet-medicines {
-    background-image: url(/olvsivkov-JSFE2022Q1/shelter/assets/icons/icon-medicines.svg);
+    background-image: url(./assets_main/img/icon-medicines.svg);
 }
 
 .help-list-item-collars {
@@ -453,7 +453,7 @@ li {
 }
 
 .icon-pet-collars {
-    background-image: url(/olvsivkov-JSFE2022Q1/shelter/assets/icons/icon-collars-leashes.svg);
+    background-image: url(./assets_main/img/icon-collars-leashes.svg);
 }
 
 .help-list-item-sleeping {
@@ -462,7 +462,7 @@ li {
 }
 
 .icon-pet-sleeping {
-    background-image: url(/olvsivkov-JSFE2022Q1/shelter/assets/icons/icon-sleeping-area.svg);
+    background-image: url(./assets_main/img/icon-sleeping-area.svg);
 }
 
 .icon-pet-size {
@@ -501,7 +501,7 @@ li {
 }
 
 .donation-dog {
-    background-image: url(/olvsivkov-JSFE2022Q1/shelter/assets/icons/donation-dog.png);
+    background-image: url(./assets_main/img/donation-dog.png);
     width: 505px;
     height: 261px;
 }
@@ -545,7 +545,7 @@ li {
 }
 
 .card-img {
-    background-image: url(/olvsivkov-JSFE2022Q1/shelter/assets/icons/credit-card.svg);
+    background-image: url(./assets_main/img/credit-card.svg);
     width: 30px;
     height: 23px;
 }
@@ -590,7 +590,7 @@ li {
     width: 1280px;
     height: 350px;
     margin: 0 auto;
-    background-image: url(/olvsivkov-JSFE2022Q1/shelter/assets/imgs/footer-background.png);
+    background-image: url(./assets_main/img/footer-background.png);
 }
 
 .footer-content {
@@ -642,7 +642,7 @@ li {
 }
 
 .footer-icon-location {
-    background-image: url(/olvsivkov-JSFE2022Q1/shelter/assets/icons/icon-marker.svg);
+    background-image: url(./assets_main/img/icon-marker.svg);
     width: 22px;
     height: 32px;
 }
@@ -663,7 +663,7 @@ li {
 }
 
 .footer-icon-email {
-    background-image: url(/olvsivkov-JSFE2022Q1/shelter/assets/icons/icon-email.svg);
+    background-image: url(./assets_main/img/icon-email.svg);
     width: 40px;
     height: 32px;
 }
@@ -674,7 +674,7 @@ li {
 }
 
 .footer-icon-phone {
-    background-image: url(/olvsivkov-JSFE2022Q1/shelter/assets/icons/icon-phone.svg);
+    background-image: url(./assets_main/img/icon-phone.svg);
     width: 40px;
     height: 32px;
 }
@@ -684,7 +684,7 @@ li {
     height: 310px;
     left: calc(50% - 300px/2 + 450px);
     top: 0px;
-    background-image: url(/olvsivkov-JSFE2022Q1/shelter/assets/icons/footer-puppy.png);
+    background-image: url(./assets_main/img/footer-puppy.png);
 }
 
 .footer-text-color {
