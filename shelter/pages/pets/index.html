@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <header class="header-pets">
+    <header class="header-pets" id="myHeader">
         <section class="header-container flex-item-row">
             <div class="pets-logo flex-items ">
                 <h1 class="pets-logo-title">
@@ -101,12 +101,51 @@
                     </div>
                 </div>
             </div>
-            <div class="pets-cards-nav"></div>
+            <div class="pets-cards-nav">
+                <div class="pets-card-navigation flex-item-row">
+                    <div class="button-paginator left-left"></div>
+                    <div class="button-paginator left"></div>
+                    <div class="button-paginator middle"></div>
+                    <div class="button-paginator right"></div>
+                    <div class="button-paginator right-right"></div>
+                </div>
+            </div>
         </section>
     </main>
-    <footer>
-        <section>
+    <footer class="footer-wrapper">
+        <a name="contacts"></a>
+        <section class="footer-content">
+            <div class="footer-contacts">
+                <div class="footer-title">
+                    <h3 class="heading-text footer-txt">For questions <br> and suggestions</h3>
+                </div>
+                <div class="footer-mail flex-item-row">
+                    <div class="footer-icon-email"></div>
+                    <div><a class="h4-card-num footer-text-color" href="mailto:email@shelter.com" target="_blank">email@shelter.com</a></div>
 
+                </div>
+                <div class="footer-phone flex-item-row">
+                    <div class="footer-icon-phone"></div>
+                    <div> <a class="h4-card-num footer-text-color" href="tel:+131111111111" target="_blank">+13 674 567 75 54</a></div>
+                </div>
+            </div>
+            <div class="footer-location">
+                <div class="footer-title">
+                    <h3 class="heading-text footer-txt">We are waiting <br> for your visit</h3>
+                </div>
+                <div class="location flex-item-row">
+                    <div class="footer-icon-location"></div>
+                    <div class="boston">
+                        <a class="h4-card-num footer-text-color " href="https://www.google.com/maps/search/?api=1&query=42.377861588309536%2C+-71.06655928170483" target="_blank">1 Central Street, Boston (entrance from the store)</a> </div>
+                </div>
+                <div class="location flex-item-row">
+                    <div class="footer-icon-location"></div>
+                    <div class="london">
+                        <a class="h4-card-num footer-text-color " href="https://www.google.com/maps/search/?api=1&query=51.4795410831211%2C+-0.19709286436242549" target="_blank">18 South Park, London </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-puppy"></div>
         </section>
     </footer>
     <script src="./script.js"></script>

@@ -1,11 +1,18 @@
+body {
+    background: #FFFFFF;
+}
+
+
 /* === header === */
 
 .header-pets {
-    position: relative;
+    position: sticky;
+    top: 0;
     width: 1280px;
     height: 120px;
     background: #FFFFFF;
     margin: 0 auto;
+    z-index: 999;
 }
 
 .header-container {
@@ -93,18 +100,18 @@ li {
 }
 
 
+/* === sticky header ===*/
+
+
 /* === main ===*/
 
 .main-pets {
     position: relative;
-    height: 1280px;
+    width: 1280px;
     height: 1342px;
-    left: 0%;
-    right: 0%;
-    top: 120px;
-    /* color-light-l */
     margin: 0px;
     background: #F6F6F6;
+    margin: 0 auto;
 }
 
 .main-container {
@@ -113,7 +120,6 @@ li {
     height: 1162px;
     left: calc(50% - 1200px/2);
     top: 80px;
-    border: 1px solid red;
 }
 
 .pets-main-heading {
@@ -121,14 +127,13 @@ li {
     height: 90px;
     left: calc(50% - 400px/2);
     top: 0px;
-    border: 1px solid red;
 }
 
 .main-heading-title {
     font-family: 'Georgia';
     font-style: normal;
     font-weight: 400;
-    font-size: 35px;
+    font-size: 34px;
     line-height: 130%;
     /* or 45px */
     display: flex;
@@ -143,7 +148,6 @@ li {
 .pets-cards-container {
     width: 1200px;
     height: 930px;
-    border: 1px solid red;
 }
 
 .pet-content {
@@ -215,6 +219,12 @@ li {
     background-image: url(./assets_pets/pets-freddie.png);
 }
 
+.pets-card-navigation {
+    width: 340px;
+    height: 52px;
+    margin: 0 auto;
+}
+
 
 /* === flex items for styles ===*/
 
@@ -232,6 +242,166 @@ li {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+}
+
+.button-paginator {
+    width: 52px;
+    height: 52px;
+}
+
+.left-left {
+    background-image: url(./assets_pets/button_paginator_inactive_left_left.png);
+}
+
+.left {
+    background-image: url(./assets_pets/button_paginator_inactive_left.png);
+}
+
+.middle {
+    background-image: url(./assets_pets/button_paginator_activemiddle.png);
+}
+
+.right {
+    background-image: url(./assets_pets/button_paginator_right.png);
+}
+
+.right-right {
+    background-image: url(./assets_pets/button_paginator_right_right.png);
+}
+
+
+/* === footer ===*/
+
+.footer-wrapper {
+    position: relative;
+    width: 1280px;
+    height: 350px;
+    margin: 0 auto;
+    background-image: url(../main/assets_main/img/footer-background.png);
+}
+
+.footer-content {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 1200px;
+    height: 310px;
+    left: 40px;
+    top: 40px;
+}
+
+.footer-contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 278px;
+    height: 234px;
+}
+
+.footer-title {
+    width: 278px;
+    height: 90px;
+    left: calc(50% - 278px/2 - 0px);
+    top: 0px;
+}
+
+.footer-txt {
+    font-size: 34px;
+    color: #FFFFFF;
+    text-align: start;
+}
+
+.footer-location {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 302px;
+    height: 234px;
+}
+
+.location {
+    width: 302px;
+    height: 46px;
+}
+
+.footer-icon-location {
+    background-image: url(../main/assets_main/img/icon-marker.svg);
+    width: 22px;
+    height: 32px;
+}
+
+.boston {
+    width: 260px;
+    height: 46px;
+}
+
+.london {
+    width: 260px;
+    height: 23px;
+}
+
+.footer-mail {
+    width: 251px;
+    height: 32px;
+    color: #F1CDB3;
+}
+
+.footer-icon-email {
+    background-image: url(../main/assets_main/img/icon-email.svg);
+    width: 40px;
+    height: 32px;
+}
+
+.footer-phone {
+    width: 239px;
+    height: 32px;
+}
+
+.footer-icon-phone {
+    background-image: url(../main/assets_main/img/icon-phone.svg);
+    width: 40px;
+    height: 32px;
+}
+
+.footer-puppy {
+    width: 300px;
+    height: 310px;
+    left: calc(50% - 300px/2 + 450px);
+    top: 0px;
+    background-image: url(../main/assets_main/img/footer-puppy.png);
+}
+
+.footer-text-color {
+    color: #F1CDB3;
+    text-decoration: none;
+}
+
+.footer-text-color:hover {
+    border-bottom: 1px solid #F1CDB3;
+}
+
+.heading-text {
+    font-family: 'Georgia';
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+    text-align: center;
+    margin: 0px;
+}
+
+.h4-card-num {
+    font-family: 'Georgia';
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: 0.06em;
+    color: #F1CDB3;
+    margin: 0px;
 }
 
 
