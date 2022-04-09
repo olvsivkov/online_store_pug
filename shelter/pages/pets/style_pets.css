@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background: #FFFFFF;
 }
@@ -247,6 +251,12 @@ li {
 .button-paginator {
     width: 52px;
     height: 52px;
+}
+
+.btn-slide-hover:hover {
+    border: 1px solid #f8964f;
+    border-radius: 100px;
+    cursor: pointer;
 }
 
 .left-left {
