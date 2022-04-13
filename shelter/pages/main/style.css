@@ -768,3 +768,149 @@ li {
 .btn-pets-block:active {
     background: #f1d8c6;
 }
+
+
+/* === media queries (768px) === */
+
+@media (max-width: 768px) {
+    .header-wrapper {
+        width: 708px;
+        height: 60px;
+        margin: 0 auto;
+    }
+    .header {
+        width: 708px;
+        height: 60px;
+        margin: 0px;
+    }
+    .main-wrapper {
+        width: 768px;
+        background-image: url(./assets_main/img/768start-screen-gradient-background.jpg), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;
+        background-size: cover;
+    }
+    .start {
+        width: 708px;
+        height: 1165px;
+        background-image: none;
+    }
+    .start-container {
+        width: 569px;
+        height: 1015px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .start-content {
+        width: 460px;
+        height: 322px;
+        margin: 0px;
+    }
+    .pet-img-start {
+        background-image: url(./assets_main/img/768start-screen-puppy.svg);
+        width: 569px;
+        height: 593px;
+    }
+    .btn-start {
+        margin: 0 auto;
+    }
+    .about {
+        width: 768px;
+        height: 1048px;
+    }
+    .about-container {
+        position: absolute;
+        width: 437px;
+        height: 868px;
+        left: calc(50% - 437px/2 - 0.5px);
+        top: calc(50% - 868px/2 - 10px);
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .pets {
+        width: 768px;
+        height: 877px;
+    }
+    .pets-container {
+        position: absolute;
+        width: 708px;
+        height: 697px;
+        left: calc(50% - 708px/2);
+        top: 80px;
+    }
+    .woody-768 {
+        display: none;
+    }
+    .pets-slider {
+        width: 708px;
+        height: 435px;
+    }
+    .help {
+        height: 779px;
+        width: 768px;
+    }
+    .help-container {
+        position: absolute;
+        width: 630px;
+        height: 599px;
+        left: 69px;
+        top: 80px;
+    }
+    .help-list {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 630px;
+        height: 449px;
+        gap: 0 60px;
+    }
+    .help-list>div {
+        width: 170px;
+        height: 113px;
+    }
+    .donation {
+        width: 768px;
+        height: 783px;
+    }
+    .donation-container {
+        position: absolute;
+        width: 505px;
+        height: 603px;
+        left: 131px;
+        top: 80px;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .footer-wrapper {
+        width: 768px;
+        height: 639px;
+        background-image: url(./assets_main/img/768footer-gradient-background.jpg), radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%), #211F20;
+        background-size: cover;
+    }
+    .footer-content {
+        position: absolute;
+        width: 708px;
+        height: 609px;
+        left: 30px;
+        top: 30px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        align-content: space-between;
+        flex-wrap: wrap;
+        gap: 0 60px;
+    }
+    .footer-location {
+        width: 278px;
+        height: 234px;
+    }
+    .footer-puppy {
+        margin-bottom: 0px;
+    }
+}
