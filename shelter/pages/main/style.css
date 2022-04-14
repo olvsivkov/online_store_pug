@@ -914,3 +914,138 @@ li {
         margin-bottom: 0px;
     }
 }
+
+@media (max-width: 320px) {
+    .header-wrapper {
+        width: 257px;
+        height: 60px;
+        margin: 0 auto;
+    }
+    .header {
+        position: absolute;
+        width: 257px;
+        height: 60px;
+        left: calc(50% - 257px/2 - 21.5px);
+    }
+    .nav-320 {
+        display: none;
+    }
+    .logo {
+        width: 257px;
+        height: 60px;
+    }
+    .start {
+        width: 320px;
+        height: 823px;
+        margin: 0px;
+    }
+    .start-container {
+        position: absolute;
+        width: 300px;
+        height: 673px;
+        left: 10px;
+        top: 150px;
+    }
+    .start-content {
+        width: 300px;
+        height: 296px;
+    }
+    .start-content-heading {
+        width: 260px;
+        margin: 0 auto;
+        font-family: 'Georgia';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 25px;
+        line-height: 130%;
+        /* or 32px */
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.06em;
+        /* color-light-xl */
+        color: #FFFFFF;
+    }
+    .start-content-subheading {
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 160%;
+        /* or 24px */
+        display: flex;
+        align-items: center;
+        text-align: center;
+        /* color-dark-s */
+        color: #CDCDCD;
+    }
+    .pet-img-start {
+        Width: 260px;
+        Height: 271.77px;
+        background-image: url(./assets_main/img/320start-screen-puppy.png);
+    }
+    .about {
+        width: 320px;
+        height: 974px;
+        margin: 0px;
+    }
+    .about-container {
+        position: absolute;
+        width: 300px;
+        height: 890px;
+        left: calc(50% - 300px/2);
+        top: calc(50% - 890px/2);
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .about-content {
+        width: 300px;
+        height: 494px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .about-heading {
+        width: 250px;
+        height: 64px;
+        left: 0px;
+        top: 0px;
+        /* h3-mobile */
+        font-family: 'Georgia';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 25px;
+        line-height: 130%;
+        /* or 32px */
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.06em;
+        /* color-dark-l */
+        color: #545454;
+    }
+    .about-subheading {
+        width: 270px;
+        /*height: 144px;*/
+        left: 15px;
+        top: 89px;
+        /* paragraph-l */
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 160%;
+        /* or 24px */
+        text-align: justify;
+        /* color-dark-xl */
+        color: #4C4C4C;
+    }
+    .cat-dog {
+        width: 260px;
+        height: 353.6px;
+        background-image: url(./assets_main/img/320about-pets.png);
+    }
+}
