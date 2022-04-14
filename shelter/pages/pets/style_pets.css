@@ -229,25 +229,6 @@ li {
     margin: 0 auto;
 }
 
-
-/* === flex items for styles ===*/
-
-.flex-items {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.flex-item-row {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
 .button-paginator {
     width: 52px;
     height: 52px;
@@ -415,6 +396,25 @@ li {
 }
 
 
+/* === flex items for styles ===*/
+
+.flex-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.flex-item-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
 /* === buttons styles ===*/
 
 .button {
@@ -468,4 +468,79 @@ li {
 
 .btn-pets-block:active {
     background: #f1d8c6;
+}
+
+
+/* === media queries 768px === */
+
+@media (max-width: 768px) {
+    .header-pets {
+        width: 768px;
+        height: 120px;
+        margin: 0 auto;
+        position: sticky;
+    }
+    .header-container {
+        width: 708px;
+        height: 60px;
+        position: absolute;
+        left: 3.91%;
+        right: 3.91%;
+        top: 25%;
+        bottom: 25%;
+    }
+    .main-pets {
+        width: 768px;
+        height: 1733px;
+    }
+    .main-container {
+        position: absolute;
+        width: 708px;
+        height: 1603px;
+        left: calc(50% - 708px/2);
+        top: 60px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .scarlett-none {
+        display: none;
+    }
+    .freddie-none {
+        display: none;
+    }
+    .pets-cards-container {
+        width: 580px;
+        height: 1365px;
+    }
+    .footer-wrapper {
+        width: 768px;
+        height: 639px;
+        background-image: url(../main/assets_main/img/768footer-gradient-background.jpg), radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%), #211F20;
+        background-size: cover;
+    }
+    .footer-content {
+        position: absolute;
+        width: 708px;
+        height: 609px;
+        left: 30px;
+        top: 30px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        align-content: space-between;
+        flex-wrap: wrap;
+        gap: 0 60px;
+    }
+    .footer-location {
+        width: 278px;
+        height: 234px;
+    }
+    .footer-puppy {
+        margin-bottom: 0px;
+    }
 }
