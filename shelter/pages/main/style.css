@@ -276,6 +276,14 @@ li {
     border-radius: 100px;
 }
 
+.button-left-320 {
+    display: none;
+}
+
+.button-right-320 {
+    display: none;
+}
+
 .btn-slide-hover:hover {
     border: 1px solid #f8964f;
     border-radius: 100px;
@@ -516,7 +524,7 @@ li {
 }
 
 .donation-subheading {
-    width: 308px;
+    width: 100%;
     height: 17px;
 }
 
@@ -538,7 +546,7 @@ li {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    width: 349px;
+    width: 100%;
     height: 43px;
     background: #F1CDB3;
     border-radius: 9px;
@@ -551,7 +559,7 @@ li {
 }
 
 .card-number {
-    width: 275px;
+    width: 75%;
     height: 23px;
 }
 
@@ -570,7 +578,7 @@ li {
 }
 
 .donation-info {
-    width: 380px;
+    width: 100%;
     height: 72px;
 }
 
@@ -934,6 +942,9 @@ li {
         width: 257px;
         height: 60px;
     }
+    .main-wrapper {
+        width: 320px;
+    }
     .start {
         width: 320px;
         height: 823px;
@@ -1047,5 +1058,191 @@ li {
         width: 260px;
         height: 353.6px;
         background-image: url(./assets_main/img/320about-pets.png);
+    }
+    .pets {
+        width: 320px;
+        height: 791px;
+        margin: 0px;
+    }
+    .pets-container {
+        position: absolute;
+        width: 300px;
+        height: 707px;
+        left: calc(50% - 300px/2);
+        top: 42px;
+    }
+    .pets-slider {
+        width: 320px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .pets-heading {
+        width: 300px;
+        height: 64px;
+    }
+    .heading-text {
+        font-family: 'Georgia';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 25px;
+        line-height: 130%;
+        /* or 32px */
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.06em;
+        /* color-dark-l */
+        color: #545454;
+    }
+    .jennifer-320 {
+        display: none;
+    }
+    .button-left {
+        display: none;
+    }
+    .button-right {
+        display: none;
+    }
+    .btns-slider-320 {
+        height: 56px;
+        width: 156px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .button-right-320 {
+        background-image: url(./assets_main/img/button_arrow_right.svg);
+        width: 52px;
+        height: 52px;
+        border: 1px solid #F1CDB3;
+        border-radius: 100px;
+        display: initial;
+    }
+    .button-left-320 {
+        background-image: url(./assets_main/img/button_arrow_left.svg);
+        width: 52px;
+        height: 52px;
+        border: 1px solid #F1CDB3;
+        border-radius: 100px;
+        display: initial;
+    }
+    .help {
+        width: 320px;
+        height: 745px;
+        margin: 0px;
+    }
+    .help-container {
+        position: initial;
+        width: 320px;
+        height: 745px;
+        left: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-content: space-around;
+        align-items: center;
+        /*flex-wrap: wrap;*/
+    }
+    .help-heading {
+        position: absolute;
+        width: 222px;
+        height: 64px;
+        left: 50px;
+        top: 42px;
+    }
+    .help-list {
+        position: absolute;
+        width: 290px;
+        height: 555px;
+        left: 15px;
+        top: 158px;
+        gap: 0 15px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .help-list>div {
+        width: 130px;
+        height: 87px;
+    }
+    .icon-pet-size {
+        width: 60px;
+        height: 60px;
+    }
+    .help-list-text {
+        font-family: 'Georgia';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 110%;
+        /* identical to box height, or 17px */
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.06em;
+        /* color-dark-l */
+        color: #545454;
+    }
+    .donation {
+        width: 320px;
+        height: 542.2px;
+        margin: 0px;
+    }
+    .donation-container {
+        position: absolute;
+        width: 300px;
+        height: 500px;
+        left: 10px;
+        top: 42px;
+        justify-content: space-around;
+    }
+    .donation-content {
+        width: 300px;
+        height: 281px;
+        align-items: center;
+    }
+    .h5-subheading {
+        font-size: 14px;
+    }
+    .card-style {
+        font-size: 15px;
+    }
+    .donation-info-text {
+        align-items: center;
+        text-align: justify;
+    }
+    .donation-dog {
+        background-image: url(./assets_main/img/320donation-dog.png);
+        width: 260px;
+        height: 135.2px;
+    }
+    .footer-wrapper {
+        width: 320px;
+        height: 879px;
+    }
+    .footer-content {
+        position: absolute;
+        width: 300px;
+        height: 850px;
+        left: 10px;
+        top: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .footer-contacts {
+        align-items: center;
+    }
+    .footer-txt {
+        text-align: center;
+        align-content: center;
+        display: block;
+        color: #FFFFFF;
     }
 }
