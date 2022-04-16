@@ -544,3 +544,112 @@ li {
         margin-bottom: 0px;
     }
 }
+
+
+/* === media queries 320px === */
+
+@media (max-width: 320px) {
+    .header-pets {
+        width: 320px;
+        height: 120px;
+    }
+    .header-container {
+        position: absolute;
+        Width: 260px;
+        Height: 60px;
+        Top: 30px;
+        Left: 10px;
+        left: 3.12%;
+        right: 15.62%;
+        top: 25%;
+        bottom: 25%;
+    }
+    .pets-nav {
+        display: none;
+    }
+    .main-pets {
+        width: 320px;
+        height: 1649px;
+        left: 0%;
+        right: 0%;
+    }
+    .sophia-320 {
+        display: none;
+    }
+    .timmy-320 {
+        display: none;
+    }
+    .charly-320 {
+        display: none;
+    }
+    .main-container {
+        position: absolute;
+        width: 300px;
+        height: 1565px;
+        left: calc(50% - 300px/2);
+        top: 42px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: space-between;
+        flex-wrap: wrap;
+    }
+    .pets-main-heading {
+        width: 300px;
+        height: 64px;
+    }
+    .main-heading-title {
+        font-family: 'Georgia';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 25px;
+        line-height: 130%;
+        /* or 32px */
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.06em;
+        /* color-dark-l */
+        color: #545454;
+    }
+    .pets-cards-container {
+        width: 270px;
+        height: 1365px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: space-between;
+        flex-wrap: wrap;
+    }
+    .pets-card-navigation {
+        width: 300px;
+        height: 52px;
+    }
+    .footer-wrapper {
+        width: 320px;
+        height: 879px;
+    }
+    .footer-content {
+        position: absolute;
+        width: 300px;
+        height: 850px;
+        left: 10px;
+        top: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .footer-contacts {
+        align-items: center;
+    }
+    .footer-txt {
+        text-align: center;
+        align-content: center;
+        display: block;
+        color: #FFFFFF;
+    }
+}
