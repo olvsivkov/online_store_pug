@@ -564,9 +564,9 @@ li {
         top: 25%;
         bottom: 25%;
     }
-    .pets-nav {
+    /*.pets-nav {
         display: none;
-    }
+    }*/
     .main-pets {
         width: 320px;
         height: 1649px;
@@ -651,5 +651,84 @@ li {
         align-content: center;
         display: block;
         color: #FFFFFF;
+    }
+    /* === hamburger menu === */
+    .hamburger {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+        user-select: none;
+        z-index: 100;
+        padding: 4px;
+    }
+    .line {
+        width: 80%;
+        height: 2px;
+        background: rgb(8, 8, 8);
+        margin: 3px 0;
+        z-index: 15;
+        transition: all 0.3s ease-in-out;
+    }
+    .white-lines {
+        background: rgb(250, 249, 249);
+    }
+    .hamburger.open .line1 {
+        transform: rotate(90deg) translate(11px, 12px);
+    }
+    .hamburger.open .line2 {
+        transform: rotate(90deg) translate(3px, 3px);
+    }
+    .hamburger.open .line3 {
+        transform: rotate(90deg) translate(-5px, -6px);
+    }
+    .menu {
+        position: fixed;
+        transform: translateX(100%);
+        transition: transform 0.2s;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 99;
+        background: rgba(0, 0, 0, 0.9);
+        color: white;
+        list-style: none;
+        padding-top: 4rem;
+        width: 320px;
+        height: 823px;
+    }
+    .nav {
+        position: absolute;
+        width: 243px;
+        height: 327px;
+        top: 148px;
+    }
+    .nav-text {
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 160%;
+        /* or 51px */
+        /* color-dark-s */
+        color: #CDCDCD;
+    }
+    .list {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        width: 243px;
+        height: 327px
+    }
+    .showMenu {
+        transform: translateY(0);
+    }
+    .closeIcon {
+        display: none;
     }
 }
