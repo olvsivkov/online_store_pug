@@ -470,6 +470,10 @@ li {
     background: #f1d8c6;
 }
 
+.hamburger {
+    display: none;
+}
+
 
 /* === media queries 768px === */
 
