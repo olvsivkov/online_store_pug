@@ -356,6 +356,59 @@ li {
 }
 
 
+/* === our friends corousel === */
+
+.wrapper,
+.carusel,
+.items {
+    display: flex;
+    flex-direction: row;
+}
+
+.items {
+    gap: 20px;
+}
+
+.carusel-wrapper {
+    width: 856px;
+    overflow: hidden;
+    margin: 0 20px;
+}
+
+.carusel {
+    position: relative;
+    left: -856px;
+}
+
+@keyframes move-left {
+    from {
+        left: -856px
+    }
+    to {
+        left: 0
+    }
+}
+
+.transition-left {
+    animation-name: move-left;
+    animation-duration: 5s;
+}
+
+@keyframes move-right {
+    from {
+        left: -856px
+    }
+    to {
+        left: -1712px
+    }
+}
+
+.transition-right {
+    animation-name: move-right;
+    animation-duration: 5s;
+}
+
+
 /* === help === */
 
 .help {
