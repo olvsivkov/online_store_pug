@@ -1,11 +1,13 @@
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 body {
     background-image: url(./assets_main/img/start-screen-gradient-background.jpg);
     background-size: 100% 100%;
     background-repeat: no-repeat;
+    overflow: hidden;
 }
 
 
