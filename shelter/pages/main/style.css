@@ -357,6 +357,26 @@ li {
     background-image: url(./assets_main/img/pets-woody.svg);
 }
 
+.charly {
+    background-image: url(./assets_main/img/pets-charly.png);
+}
+
+.freddy {
+    background-image: url(./assets_main/img/pets-freddie.png);
+}
+
+.scarlet {
+    background-image: url(./assets_main/img/pets-scarlet.png);
+}
+
+.sophia {
+    background-image: url(./assets_main/img/pets-sophia.png);
+}
+
+.timmy {
+    background-image: url(./assets_main/img/pets-timmy.png);
+}
+
 
 /* === our friends corousel === */
 
@@ -983,6 +1003,43 @@ li {
     .footer-puppy {
         margin-bottom: 0px;
     }
+    /* === carousel === */
+    .items {
+        justify-content: space-around;
+    }
+    .carusel-wrapper {
+        width: 564px;
+        overflow: hidden;
+        margin: 0 20px;
+    }
+    .carusel {
+        position: relative;
+        left: -564px;
+    }
+    @keyframes move-left {
+        from {
+            left: -560px
+        }
+        to {
+            left: 0
+        }
+    }
+    .transition-left {
+        animation-name: move-left;
+        animation-duration: 5s;
+    }
+    @keyframes move-right {
+        from {
+            left: -560px
+        }
+        to {
+            left: -1127px
+        }
+    }
+    .transition-right {
+        animation-name: move-right;
+        animation-duration: 5s;
+    }
 }
 
 @media (max-width: 320px) {
@@ -1386,5 +1443,42 @@ li {
     }
     .closeIcon {
         display: none;
+    }
+    /* === carousel === */
+    .items {
+        justify-content: space-around;
+    }
+    .carusel-wrapper {
+        width: 270px;
+        overflow: hidden;
+        margin: 0 20px;
+    }
+    .carusel {
+        position: relative;
+        left: -275px;
+    }
+    @keyframes move-left {
+        from {
+            left: -275px;
+        }
+        to {
+            left: 0
+        }
+    }
+    .transition-left {
+        animation-name: move-left;
+        animation-duration: 5s;
+    }
+    @keyframes move-right {
+        from {
+            left: -275px
+        }
+        to {
+            left: -549px
+        }
+    }
+    .transition-right {
+        animation-name: move-right;
+        animation-duration: 5s;
     }
 }
