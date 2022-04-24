@@ -4,13 +4,6 @@ const CARUSEL = document.querySelector(".carusel")
 const ITEM_LEFT = document.querySelector("#left")
 const ITEM_RIGHT = document.querySelector("#right")
 
-/* 
-whiteLines.forEach(
-            function(whiteLines) {
-                whiteLines.classList.toggle('white-lines');
-            }
-        )
-*/
 
 function moveRight() {
     CARUSEL.classList.add("transition-right")
@@ -19,8 +12,6 @@ function moveRight() {
             BTNRIGHT.removeEventListener("click", moveRight)
         }
     )
-
-    // BTNRIGHT.removeEventListener("click", moveRight)
 }
 BTNRIGHT.forEach(
     function(BTNRIGHT) {
@@ -28,16 +19,15 @@ BTNRIGHT.forEach(
     }
 )
 
-// BTNRIGHT.addEventListener("click", moveRight)
+
 
 function afterAnimationEndRght() {
     CARUSEL.classList.remove("transition-right")
     BTNRIGHT.forEach(
-            function(BTNRIGHT) {
-                BTNRIGHT.addEventListener("click", moveRight)
-            }
-        )
-        //BTNRIGHT.addEventListener("click", moveRight)
+        function(BTNRIGHT) {
+            BTNRIGHT.addEventListener("click", moveRight)
+        }
+    )
 }
 
 CARUSEL.addEventListener("animationend", afterAnimationEndRght)
@@ -49,26 +39,22 @@ function moveLeft() {
             BTNLEFT.removeEventListener("click", moveLeft)
         }
     )
-
-    //BTNLEFT.removeEventListener("click", moveLeft)
 }
 
 BTNLEFT.forEach(
-        function(BTNLEFT) {
-            BTNLEFT.addEventListener("click", moveLeft)
-        }
-    )
-    //BTNLEFT.addEventListener("click", moveLeft)
+    function(BTNLEFT) {
+        BTNLEFT.addEventListener("click", moveLeft)
+    }
+)
 
 
 function afterAnimationEndLft() {
     CARUSEL.classList.remove("transition-left")
     BTNLEFT.forEach(
-            function(BTNLEFT) {
-                BTNLEFT.addEventListener("click", moveLeft)
-            }
-        )
-        //BTNLEFT.addEventListener("click", moveLeft)
+        function(BTNLEFT) {
+            BTNLEFT.addEventListener("click", moveLeft)
+        }
+    )
 }
 
 CARUSEL.addEventListener("animationend", afterAnimationEndLft)
