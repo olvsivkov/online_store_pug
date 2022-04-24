@@ -1,34 +1,46 @@
 html {
     scroll-behavior: smooth;
+    width: auto;
     overflow-x: hidden;
 }
 
 body {
-    background-image: url(./assets_main/img/start-screen-gradient-background.jpg);
-    background-size: 100% 100%;
+    /*background-image: url(./assets_main/img/start-screen-gradient-background.jpg);*/
+    background-size: 100%;
     background-repeat: no-repeat;
     overflow: hidden;
+    width: auto;
 }
 
 
 /* === header === */
 
+.main-wrapper {
+    max-width: 1280px;
+    width: 100%;
+    background-image: url(./assets_main/img/footer-background.png), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;
+    background-size: cover;
+    margin: auto;
+}
+
 .header-wrapper {
     position: absolute;
     top: 60px;
-    width: 1200px;
+    max-width: 1200px;
+    width: 100%;
     z-index: 999999;
     margin-left: auto;
     margin-right: auto;
     left: 0;
     right: 0;
     color: #fff;
+    margin: 0 auto;
 }
 
 .header {
     display: flex;
     justify-content: space-between;
-    width: 1200px;
+    max-width: 1200px;
     height: 60px;
 }
 
@@ -112,18 +124,17 @@ li {
 .start {
     position: relative;
     background-image: url(./assets_main/img/start-screen-gradient-background.jpg );
-    Width: 1280px;
+    Width: 100%;
     Height: 908px;
     margin: 0 auto;
 }
 
 .start-container {
-    position: absolute;
+    position: relative;
     display: flex;
-    justify-content: space-between;
-    width: 1200px;
+    justify-content: space-around;
+    Width: 100%;
     height: 728px;
-    left: 40px;
     top: 180px;
 }
 
@@ -166,7 +177,7 @@ li {
 .about {
     position: relative;
     margin: 0 auto;
-    width: 1280px;
+    width: 100%;
     height: 588px;
     left: 0%;
     right: 0%;
@@ -174,13 +185,12 @@ li {
 }
 
 .about-container {
-    position: absolute;
+    position: relative;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    width: 1200px;
+    width: 100%;
     height: 408px;
-    left: calc(50% - 1200px/2);
     top: calc(50% - 408px/2 - 10px);
 }
 
@@ -228,20 +238,19 @@ li {
 .pets {
     position: relative;
     margin: 0 auto;
-    width: 1280px;
+    width: 100%;
     height: 877px;
     background: #F6F6F6;
 }
 
 .pets-container {
-    position: absolute;
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    width: 1200px;
+    width: 100%;
     height: 697px;
-    left: calc(50% - 1200px/2);
     top: 80px;
 }
 
@@ -264,9 +273,9 @@ li {
 .pets-slider {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    width: 1200px;
+    width: 100%;
     height: 435px;
 }
 
@@ -357,26 +366,98 @@ li {
     background-image: url(./assets_main/img/pets-woody.svg);
 }
 
+.charly {
+    background-image: url(./assets_main/img/pets-charly.png);
+}
+
+.freddy {
+    background-image: url(./assets_main/img/pets-freddie.png);
+}
+
+.scarlet {
+    background-image: url(./assets_main/img/pets-scarlet.png);
+}
+
+.sophia {
+    background-image: url(./assets_main/img/pets-sophia.png);
+}
+
+.timmy {
+    background-image: url(./assets_main/img/pets-timmy.png);
+}
+
+
+/* === our friends corousel === */
+
+.wrapper,
+.carusel,
+.items {
+    display: flex;
+    flex-direction: row;
+}
+
+.items {
+    gap: 20px;
+}
+
+.carusel-wrapper {
+    width: 856px;
+    overflow: hidden;
+    margin: 0 20px;
+}
+
+.carusel {
+    position: relative;
+    left: -856px;
+}
+
+@keyframes move-left {
+    from {
+        left: -856px
+    }
+    to {
+        left: 0
+    }
+}
+
+.transition-left {
+    animation-name: move-left;
+    animation-duration: 5s;
+}
+
+@keyframes move-right {
+    from {
+        left: -856px
+    }
+    to {
+        left: -1712px
+    }
+}
+
+.transition-right {
+    animation-name: move-right;
+    animation-duration: 5s;
+}
+
 
 /* === help === */
 
 .help {
     position: relative;
     margin: 0 auto;
-    width: 1280px;
+    width: 100%;
     height: 611px;
     background: #F6F6F6;
 }
 
 .help-container {
-    position: absolute;
+    position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    width: 1200px;
+    width: 95%;
     height: 431px;
-    left: calc(50% - 1200px/2);
     top: 80px;
 }
 
@@ -492,21 +573,20 @@ li {
 
 .donation {
     position: relative;
-    width: 1280px;
+    width: 100%;
     height: 462px;
     margin: 0 auto;
     background: #F6F6F6;
 }
 
 .donation-container {
-    position: absolute;
+    position: relative;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    width: 915px;
+    width: 98%;
     height: 282px;
-    left: calc(50% - 915px/2 + 0.5px);
     top: 80px;
 }
 
@@ -597,21 +677,21 @@ li {
 
 .footer-wrapper {
     position: relative;
-    width: 1280px;
+    max-width: 1280px;
+    width: 100%;
     height: 350px;
     margin: 0 auto;
     background-image: url(./assets_main/img/footer-background.png);
 }
 
 .footer-content {
-    position: absolute;
+    position: relative;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    width: 1200px;
+    width: 98%;
     height: 310px;
-    left: 40px;
     top: 40px;
 }
 
@@ -786,37 +866,38 @@ li {
 
 /* === media queries (768px) === */
 
-@media (max-width: 768px) {
+@media (max-width: 1120px) {
     .header-wrapper {
-        width: 708px;
+        max-width: 708px;
         height: 60px;
         margin: 0 auto;
     }
     .header {
         justify-content: space-around;
-        width: 708px;
+        max-width: 708px;
         height: 60px;
         margin: 0px;
     }
     .main-wrapper {
-        width: 768px;
+        max-width: 1120px;
         background-image: url(./assets_main/img/768start-screen-gradient-background.jpg), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;
         background-size: cover;
     }
     .start {
-        width: 768px;
+        max-width: 1120px;
         height: 1165px;
         background-image: url(./assets_main/img/768start-screen-gradient-background.jpg), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;
         background-size: cover;
         margin: 0px;
     }
     .start-container {
-        width: 569px;
+        max-width: 569px;
         height: 1015px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
+        margin: 0 auto;
     }
     .start-content {
         width: 460px;
@@ -930,9 +1011,129 @@ li {
     .footer-puppy {
         margin-bottom: 0px;
     }
+    /* === carousel === */
+    .items {
+        justify-content: space-around;
+    }
+    .carusel-wrapper {
+        width: 564px;
+        overflow: hidden;
+        margin: 0 20px;
+    }
+    .carusel {
+        position: relative;
+        left: -564px;
+    }
+    @keyframes move-left {
+        from {
+            left: -560px
+        }
+        to {
+            left: 0
+        }
+    }
+    .transition-left {
+        animation-name: move-left;
+        animation-duration: 5s;
+    }
+    @keyframes move-right {
+        from {
+            left: -560px
+        }
+        to {
+            left: -1127px
+        }
+    }
+    .transition-right {
+        animation-name: move-right;
+        animation-duration: 5s;
+    }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 750px) {
+    /* === hamburger menu ===*/
+    .hamburger {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+        user-select: none;
+        z-index: 100;
+        padding: 4px;
+    }
+    .line {
+        width: 80%;
+        height: 2px;
+        background: rgb(250, 249, 249);
+        margin: 3px 0;
+        z-index: 15;
+        transition: all 0.3s ease-in-out;
+    }
+    /*.white-lines {
+        background: rgb(250, 249, 249);
+    }*/
+    .hamburger.open .line1 {
+        transform: rotate(90deg) translate(11px, 12px);
+    }
+    .hamburger.open .line2 {
+        transform: rotate(90deg) translate(3px, 3px);
+    }
+    .hamburger.open .line3 {
+        transform: rotate(90deg) translate(-5px, -6px);
+    }
+    .menu {
+        position: fixed;
+        transform: translateX(100%);
+        transition: transform 0.2s;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 99;
+        background: rgba(0, 0, 0, 0.9);
+        color: white;
+        list-style: none;
+        padding-top: 4rem;
+        width: 100%;
+        height: 823px;
+    }
+    .nav {
+        width: 243px;
+        height: 327px;
+        top: 148px;
+        MARGIN: auto;
+        padding-top: 20%;
+    }
+    .nav-text {
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 160%;
+        /* or 51px */
+        /* color-dark-s */
+        color: #CDCDCD;
+    }
+    .list {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        width: 243px;
+        height: 327px
+    }
+    .showMenu {
+        transform: translateY(0);
+    }
+    .closeIcon {
+        display: none;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 750px) {
     .header-wrapper {
         width: 257px;
         height: 60px;
@@ -944,7 +1145,7 @@ li {
         height: 60px;
         left: calc(50% - 257px/2 - 21.5px);
     }
-    /*.nav-320 {
+    /*nav-320 {
         display: none;
     }*/
     .logo {
@@ -952,19 +1153,20 @@ li {
         height: 60px;
     }
     .main-wrapper {
-        width: 320px;
+        width: 100%;
     }
     .start {
-        width: 320px;
+        width: 100%;
         height: 823px;
         margin: 0px;
     }
     .start-container {
-        position: absolute;
+        position: relative;
         width: 300px;
         height: 673px;
         left: 10px;
         top: 150px;
+        margin: 0 auto;
     }
     .start-content {
         width: 300px;
@@ -1008,9 +1210,10 @@ li {
         width: 320px;
         height: 974px;
         margin: 0px;
+        margin: 0 auto;
     }
     .about-container {
-        position: absolute;
+        position: relative;
         width: 300px;
         height: 890px;
         left: calc(50% - 300px/2);
@@ -1019,6 +1222,7 @@ li {
         flex-direction: column-reverse;
         justify-content: space-between;
         align-items: center;
+        margin: 0 auto;
     }
     .about-content {
         width: 300px;
@@ -1072,6 +1276,7 @@ li {
         width: 320px;
         height: 791px;
         margin: 0px;
+        margin: 0 auto;
     }
     .pets-container {
         position: absolute;
@@ -1141,6 +1346,7 @@ li {
         width: 320px;
         height: 745px;
         margin: 0px;
+        margin: 0 auto;
     }
     .help-container {
         position: initial;
@@ -1200,6 +1406,7 @@ li {
         width: 320px;
         height: 542.2px;
         margin: 0px;
+        margin: 0 auto;
     }
     .donation-container {
         position: absolute;
@@ -1230,11 +1437,12 @@ li {
         height: 135.2px;
     }
     .footer-wrapper {
-        width: 320px;
+        max-width: 650px;
+        width: 100%;
         height: 879px;
     }
     .footer-content {
-        position: absolute;
+        position: relative;
         width: 300px;
         height: 850px;
         left: 10px;
@@ -1244,6 +1452,7 @@ li {
         justify-content: space-between;
         align-items: center;
         flex-wrap: wrap;
+        margin: 0 auto;
     }
     .footer-contacts {
         align-items: center;
@@ -1254,84 +1463,41 @@ li {
         display: block;
         color: #FFFFFF;
     }
-    /* === hamburger menu ===*/
-    .hamburger {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 40px;
-        height: 40px;
-        cursor: pointer;
-        user-select: none;
-        z-index: 100;
-        padding: 4px;
-    }
-    .line {
-        width: 80%;
-        height: 2px;
-        background: rgb(250, 249, 249);
-        margin: 3px 0;
-        z-index: 15;
-        transition: all 0.3s ease-in-out;
-    }
-    /*.white-lines {
-        background: rgb(250, 249, 249);
-    }*/
-    .hamburger.open .line1 {
-        transform: rotate(90deg) translate(11px, 12px);
-    }
-    .hamburger.open .line2 {
-        transform: rotate(90deg) translate(3px, 3px);
-    }
-    .hamburger.open .line3 {
-        transform: rotate(90deg) translate(-5px, -6px);
-    }
-    .menu {
-        position: fixed;
-        transform: translateX(100%);
-        transition: transform 0.2s;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        z-index: 99;
-        background: rgba(0, 0, 0, 0.9);
-        color: white;
-        list-style: none;
-        padding-top: 4rem;
-        width: 320px;
-        height: 823px;
-    }
-    .nav {
-        width: 243px;
-        height: 327px;
-        top: 148px;
-        MARGIN: auto;
-        padding-top: 20%;
-    }
-    .nav-text {
-        font-family: 'Arial';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 32px;
-        line-height: 160%;
-        /* or 51px */
-        /* color-dark-s */
-        color: #CDCDCD;
-    }
-    .list {
-        display: flex;
-        flex-direction: column;
+    /* === carousel === */
+    .items {
         justify-content: space-around;
-        align-items: center;
-        width: 243px;
-        height: 327px
     }
-    .showMenu {
-        transform: translateY(0);
+    .carusel-wrapper {
+        width: 270px;
+        overflow: hidden;
+        margin: 0 20px;
     }
-    .closeIcon {
-        display: none;
+    .carusel {
+        position: relative;
+        left: -275px;
+    }
+    @keyframes move-left {
+        from {
+            left: -275px;
+        }
+        to {
+            left: 0
+        }
+    }
+    .transition-left {
+        animation-name: move-left;
+        animation-duration: 5s;
+    }
+    @keyframes move-right {
+        from {
+            left: -275px
+        }
+        to {
+            left: -549px
+        }
+    }
+    .transition-right {
+        animation-name: move-right;
+        animation-duration: 5s;
     }
 }
