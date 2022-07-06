@@ -1,0 +1,29 @@
+{
+  "name": "online-store",
+  "version": "1.0.0",
+  "description": "Online-store",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack --mode development",
+    "build": "webpack --mode production"
+  },
+  "keywords": [
+    "JS",
+    "TypeScript"
+  ],
+  "author": "Sivkov Oleg <1000listov@mail.ru>",
+  "license": "ISC",
+  "devDependencies": {
+    "css-loader": "^6.7.1",
+    "html-webpack-plugin": "^5.5.0",
+    "sass": "^1.53.0",
+    "sass-loader": "^13.0.2",
+    "style-loader": "^3.3.1",
+    "ts-loader": "^9.3.1",
+    "webpack": "^5.73.0",
+    "webpack-cli": "^4.10.0"
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  }
+}
