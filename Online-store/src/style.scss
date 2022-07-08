@@ -1,5 +1,107 @@
 
+$blocks-width: 95%;
+$max-block-height: 1920px;
 
-body {
-  background-color: red;
+.header{
+  border: 1px red solid;
+  max-width: $max-block-height;
+  width: $blocks-width;
+  height: auto;
+  margin: auto;
+  .header-band{
+    display: grid;
+    grid-template-columns: 15% 15%;
+    justify-items: end;
+    justify-content: end;
+    height: 4rem;
+    gap: 1%;
+    padding: 1%;
+  }
+  .search{
+    border: 1px red solid;
+  }
+  .basket{
+    border: 1px red solid;
+    width: 15%;
+  }
+  .heading-wrapper{
+    border: 1px red solid;
+    width: 60%;
+    margin: auto;
+    margin-top: 3%;
+
+    img{
+      width: 50%;
+      margin: auto;
+    }
+
+    h1{
+      width: 50%;
+      margin: auto;
+      text-align: center;
+    }
+
+    p {
+      width: 50%;
+      margin: auto;
+      text-align: center;
+      padding: 2%;
+    }
+  }
 }
+
+.main {
+  border: 1px red solid;
+  max-width: $max-block-height;
+  width: $blocks-width;
+  height: 15rem;
+  margin: auto;
+  height: auto;
+  .main-wrapper{
+    border: 1px red solid;
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: stretch;
+    justify-content: space-around;
+    gap: 2%;
+    margin: auto;
+    padding: 5% 0 5% 0;
+    .card-item{
+      border: 1px red solid;
+      height: 15rem;
+    }
+  }
+}
+
+.footer {
+  border: 1px red solid;
+  max-width: $max-block-height;
+  width: $blocks-width;
+  height: auto;
+  margin: auto;
+  .footer-wrapper{
+    width: 95%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: stretch;
+    justify-content: space-around;
+    gap: 2%;
+    margin: auto;
+    padding: 5% 0 5% 0;
+    .git-hub{
+      border: 1px red solid;
+    }
+    .e-mail{
+      border: 1px red solid;
+    }
+    .tel{
+      border: 1px red solid;
+    }
+  }
+}
+
+.none {
+	display: none;
+}
+
