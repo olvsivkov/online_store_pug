@@ -11,6 +11,8 @@ import *  as Pag7 from "./assets/photoList/Pag7.png"
 import *  as Pag8 from "./assets/photoList/Pag8.jpg"
 import *  as Pag9 from "./assets/photoList/Pag9.jpg"
 import *  as Pag10 from "./assets/photoList/Pag10.jpg"
+import *  as PagLogo from "./assets/photoList/Pag-Logo.jpg"
+import *  as Basket from "./assets/photoList/basket.png"
 
 export class TempComponent{
   public Pag1 = pag;
@@ -23,6 +25,8 @@ export class TempComponent{
   public Pag8 = Pag8;
   public Pag9 = Pag9;
   public Pag10 = Pag10;
+  public PagLogo = PagLogo;
+  public basket = Basket;
 }
 
 

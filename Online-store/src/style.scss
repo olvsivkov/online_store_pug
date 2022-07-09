@@ -10,16 +10,18 @@ $max-block-height: 1920px;
   gap: 1%;
   padding: 1%;
 }
-$dev-border: 1px red solid;
+$dev-border: none;
 
 body {
   background-color: #f8f9f9f1;
   height: 100%;
 }
 
-h1, p {
+h1, p, a {
   font-family: 'Roboto', sans-serif;
+  color: #444242;
 }
+
 
 .header{
   border: $dev-border;
@@ -27,6 +29,7 @@ h1, p {
   width: $blocks-width;
   height: auto;
   margin: auto;
+  background-color: white;
   .header-band{
     @include grid-column;
   }
@@ -44,6 +47,16 @@ h1, p {
         margin: 0;
         text-align: center;
         line-height: 222%;
+        cursor: pointer;
+        background-color: white;
+        border-radius: 5px;
+        border: 1px solid orange; 
+      }
+      .srch-btn-text:hover{
+        background-color: rgb(247, 196, 103);
+      }
+      .srch-btn-text:active{
+        background-color: rgb(250, 117, 69);
       }
     }
   }
@@ -51,14 +64,30 @@ h1, p {
     border: $dev-border;
     width: auto;
     height: 100%;
+    width: 20%;
     display: grid;
     grid-template-rows: 2fr 1fr;
     margin: auto;
+    .in-basket{
+      background-image: url(../dist/src/assets/photoList/basket..png);
+      background-size: cover;
+    }
     .clear-basket{
       .clr-bskt-text{
         border: $dev-border;
         margin: 0;
         text-align: center;
+        cursor: pointer;
+        background-color: white;
+        border-radius: 5px;
+        border: 1px solid orange; 
+        padding: 5% 5% 5% 5%;
+      }
+      .clr-bskt-text:hover{
+        background-color: rgb(247, 196, 103);
+      }
+      .clr-bskt-text:active{
+        background-color: rgb(250, 117, 69);
       }
     }
   }
@@ -70,6 +99,7 @@ h1, p {
 
     .title-img {
       width: 50%;
+      display: block;
       margin: auto;
     }
 
@@ -77,6 +107,7 @@ h1, p {
       width: 50%;
       margin: auto;
       text-align: center;
+      background-color: white;
     }
 
     .under-title {
@@ -84,6 +115,7 @@ h1, p {
       margin: auto;
       text-align: center;
       padding: 2%;
+      text-decoration: underline;
     }
   }
 }
@@ -104,21 +136,22 @@ h1, p {
     justify-content: space-around;
     gap: 1%;
     margin: auto;
-    padding: 5% 0 5% 0;
+    padding: 5% 0 7% 0;
     .card-item{
       border: $dev-border;
-      height: 30rem;
+      height: auto;
       width: 90%;
       margin: auto;
       background-color: #ffffff;
-      border-color: #c2c2c2;
+      border: 1px solid #d1cbcb;
+      border-radius: 3px;
       .card-item-wripper{
         border: $dev-border;
-        padding: 1%;
+        padding: 1% 1% 5% 1%;
         display: grid;
-        grid-template-rows: 4fr 1fr 1fr 1fr;
+        grid-template-rows: 4fr 0.5fr 0.5fr 0.5fr;
         gap: 1%;
-        height: 97%;
+        height: auto;
         .pag-img{
           border: $dev-border;
           .pag-imgs{
@@ -129,12 +162,67 @@ h1, p {
         }
         .pag-name{
           border: $dev-border;
+          text-align: center;
+          .name-text{
+            font-size: 3.5vmin;
+            margin: 0;
+            font-weight: bold;
+            color: #444242;
+            border-top: 1px solid #d1cbcb;
+          }
         }
         .pag-param{
           border: $dev-border;
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          justify-items: stretch;
+          justify-content: space-around;
+          gap: 1%;
+         
+          .pag-age{
+            border: $dev-border;
+            height: 100%;
+            width: 100%;
+            .age-text{
+              font-size: 2.5vmin;
+              font-weight: bold;
+              color: #444242;
+              text-align: center;
+              margin: 0;
+            }
+          }
+          .pag-color{
+            border: $dev-border;
+            height: 100%;
+            width: 100%;
+            .color-text{
+              font-size: 2.5vmin;
+              font-weight: bold;
+              color: #444242;
+              text-align: center;
+              margin: 0;
+            }
+          }
         }
         .take-to-basket-btn{
           border: $dev-border;
+          .basket-text {
+            font-size: 3vmin;
+            color: #444242;
+            display: block;
+            margin: 0 auto;
+            padding: 2% 25% 2% 25%;
+            background-color: white;
+            border-radius: 5px;
+            border: 1px solid orange; 
+            cursor: pointer;
+          }
+          .basket-text:hover{
+            background-color: rgb(247, 196, 103);
+          }
+          .basket-text:active{
+            background-color: rgb(250, 117, 69);
+          }
         }
       }
     }
@@ -150,21 +238,20 @@ h1, p {
   .footer-wrapper{
     width: 95%;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     justify-items: stretch;
     justify-content: space-around;
     gap: 2%;
     margin: auto;
     padding: 5% 0 5% 0;
-    .git-hub{
+    .links{
       border: $dev-border;
+      font-size: 3vmin;
+      color: #444242;
     }
-    .e-mail{
-      border: $dev-border;
-    }
-    .tel{
-      border: $dev-border;
-    }
+     .links:hover{
+      color: #0c0c0c;
+     } 
   }
 }
 
