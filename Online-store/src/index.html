@@ -4,34 +4,169 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
  
-  <title>Document</title>
+  <title>Pug shop</title>
 </head>
 <body>
   <header class="header">
     <div class="header-band">
       <div class="search">
-        <input type="text" placeholder="Поиск">
+        <input class="input-search" type="text" placeholder="Поиск">
+        <div class="search-btn">
+          <p class="srch-btn-text">Search</p>
+        </div>
       </div>
       <div class="basket">
-      корзина
+        <div class="in-basket">
+          корзина
+        </div>
+        <div class="clear-basket">
+          <p class="clr-bskt-text">Clear</p>
+        </div>
       </div>
     </div>
     <div class="heading-wrapper">
-      <img src="#" alt="logo-picture">
-      <h1>Магазин мопсов</h1>
-      <p>Дружбу можно купить</p>
+      <img class="title-img" src="#" alt="logo-picture">
+      <h1>Pug shop</h1>
+      <p class="under-title">You can buy friendship!</p>
     </div>
   </header>
 
   <main class = "main">
     <div class="main-wrapper">
-      <div class="card-item">Мопс1</div>
-      <div class="card-item">Мопс2</div>
-      <div class="card-item">Мопс3</div>
-      <div class="card-item">Мопс4</div>
-      <div class="card-item">Мопс5</div>
-      <div class="card-item">Мопс6</div>
+      <div class="card-item">
+        <div class="card-item-wripper">
+          <div class="pag-img Pag1">
+            <img class="pag-imgs" src="../dist/src/assets/photoList/Pag1..jpg" alt="Pag1">
+          </div>
+          <div class="pag-name"></div>
+          <div class="pag-param">
+            <div class="pag-age"></div>
+            <div class="pag-color"></div>
+          </div>
+          <div class="take-to-basket-btn"></div>
+        </div>
+      </div>
+      <div class="card-item">
+        <div class="card-item-wripper">
+          <div class="pag-img">
+            <img class="pag-imgs" src="../dist/src/assets/photoList/Pag2..png" alt="pag 2">
+          </div>
+          <div class="pag-name"></div>
+          <div class="pag-param">
+            <div class="pag-age"></div>
+            <div class="pag-color"></div>
+          </div>
+          <div class="take-to-basket-btn"></div>
+        </div>
+      </div>
+      <div class="card-item">
+        <div class="card-item-wripper">
+          <div class="pag-img">
+            <img class="pag-imgs" src="../dist/src/assets/photoList/Pag3..png" alt="pag 3">
+          </div>
+          <div class="pag-name"></div>
+          <div class="pag-param">
+            <div class="pag-age"></div>
+            <div class="pag-color"></div>
+          </div>
+          <div class="take-to-basket-btn"></div>
+        </div>
+      </div>
+      <div class="card-item">
+        <div class="card-item-wripper">
+          <div class="pag-img">
+            <img class="pag-imgs" src="../dist/src/assets/photoList/Pag4..png" alt="pag 4">
+          </div>
+          <div class="pag-name"></div>
+          <div class="pag-param">
+            <div class="pag-age"></div>
+            <div class="pag-color"></div>
+          </div>
+          <div class="take-to-basket-btn"></div>
+        </div>
+      </div>
+      <div class="card-item">
+        <div class="card-item-wripper">
+          <div class="pag-img">
+            <img class="pag-imgs" src="../dist/src/assets/photoList/Pag5..jpg" alt="pag 5">
+          </div>
+          <div class="pag-name"></div>
+          <div class="pag-param">
+            <div class="pag-age"></div>
+            <div class="pag-color"></div>
+          </div>
+          <div class="take-to-basket-btn"></div>
+        </div>
+      </div>
+      <div class="card-item">
+        <div class="card-item-wripper">
+          <div class="pag-img">
+            <img class="pag-imgs" src="../dist/src/assets/photoList/Pag6..jpg" alt="pag 6">
+          </div>
+          <div class="pag-name"></div>
+          <div class="pag-param">
+            <div class="pag-age"></div>
+            <div class="pag-color"></div>
+          </div>
+          <div class="take-to-basket-btn"></div>
+        </div>
+      </div>
+      <div class="card-item">
+        <div class="card-item-wripper">
+          <div class="pag-img">
+            <img class="pag-imgs" src="../dist/src/assets/photoList/Pag7..png" alt="pag 7">
+          </div>
+          <div class="pag-name"></div>
+          <div class="pag-param">
+            <div class="pag-age"></div>
+            <div class="pag-color"></div>
+          </div>
+          <div class="take-to-basket-btn"></div>
+        </div>
+      </div>
+      <div class="card-item">
+        <div class="card-item-wripper">
+          <div class="pag-img">
+            <img class="pag-imgs" src="../dist/src/assets/photoList/Pag8..jpg" alt="pag 8">
+          </div>
+          <div class="pag-name"></div>
+          <div class="pag-param">
+            <div class="pag-age"></div>
+            <div class="pag-color"></div>
+          </div>
+          <div class="take-to-basket-btn"></div>
+        </div>
+      </div>
+      <div class="card-item">
+        <div class="card-item-wripper">
+          <div class="pag-img">
+            <img class="pag-imgs" src="../dist/src/assets/photoList/Pag9..jpg" alt="pag 9">
+          </div>
+          <div class="pag-name"></div>
+          <div class="pag-param">
+            <div class="pag-age"></div>
+            <div class="pag-color"></div>
+          </div>
+          <div class="take-to-basket-btn"></div>
+        </div>
+      </div>
+      <div class="card-item">
+        <div class="card-item-wripper">
+          <div class="pag-img">
+            <img class="pag-imgs" src="../dist/src/assets/photoList/Pag10..jpg" alt="pag 10">
+          </div>
+          <div class="pag-name"></div>
+          <div class="pag-param">
+            <div class="pag-age"></div>
+            <div class="pag-color"></div>
+          </div>
+          <div class="take-to-basket-btn"></div>
+        </div>
+      </div>
     </div>
   </main>
 

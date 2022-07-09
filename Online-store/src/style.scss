@@ -1,36 +1,74 @@
 
 $blocks-width: 95%;
 $max-block-height: 1920px;
+@mixin grid-column {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  justify-items: end;
+  justify-content: end;
+  height: 4rem;
+  gap: 1%;
+  padding: 1%;
+}
+$dev-border: 1px red solid;
+
+body {
+  background-color: #f8f9f9f1;
+  height: 100%;
+}
+
+h1, p {
+  font-family: 'Roboto', sans-serif;
+}
 
 .header{
-  border: 1px red solid;
+  border: $dev-border;
   max-width: $max-block-height;
   width: $blocks-width;
   height: auto;
   margin: auto;
   .header-band{
-    display: grid;
-    grid-template-columns: 15% 15%;
-    justify-items: end;
-    justify-content: end;
-    height: 4rem;
-    gap: 1%;
-    padding: 1%;
+    @include grid-column;
   }
   .search{
-    border: 1px red solid;
+    border: $dev-border;
+    @include grid-column;
+    .input-search{
+      height: 50%;
+    }
+    .search-btn{
+      border: $dev-border;
+      height: 56%;
+      width: 100%;
+      .srch-btn-text{
+        margin: 0;
+        text-align: center;
+        line-height: 222%;
+      }
+    }
   }
   .basket{
-    border: 1px red solid;
-    width: 15%;
+    border: $dev-border;
+    width: auto;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+    margin: auto;
+    .clear-basket{
+      .clr-bskt-text{
+        border: $dev-border;
+        margin: 0;
+        text-align: center;
+      }
+    }
   }
   .heading-wrapper{
-    border: 1px red solid;
+    border: $dev-border;
     width: 60%;
     margin: auto;
     margin-top: 3%;
 
-    img{
+    .title-img {
       width: 50%;
       margin: auto;
     }
@@ -41,7 +79,7 @@ $max-block-height: 1920px;
       text-align: center;
     }
 
-    p {
+    .under-title {
       width: 50%;
       margin: auto;
       text-align: center;
@@ -51,31 +89,60 @@ $max-block-height: 1920px;
 }
 
 .main {
-  border: 1px red solid;
+  border: $dev-border;
   max-width: $max-block-height;
   width: $blocks-width;
   height: 15rem;
   margin: auto;
   height: auto;
   .main-wrapper{
-    border: 1px red solid;
+    border: $dev-border;
     width: 90%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     justify-items: stretch;
     justify-content: space-around;
-    gap: 2%;
+    gap: 1%;
     margin: auto;
     padding: 5% 0 5% 0;
     .card-item{
-      border: 1px red solid;
-      height: 15rem;
+      border: $dev-border;
+      height: 30rem;
+      width: 90%;
+      margin: auto;
+      background-color: #ffffff;
+      border-color: #c2c2c2;
+      .card-item-wripper{
+        border: $dev-border;
+        padding: 1%;
+        display: grid;
+        grid-template-rows: 4fr 1fr 1fr 1fr;
+        gap: 1%;
+        height: 97%;
+        .pag-img{
+          border: $dev-border;
+          .pag-imgs{
+            display: block;
+            margin: 0 auto;
+            height: 15rem;
+          }
+        }
+        .pag-name{
+          border: $dev-border;
+        }
+        .pag-param{
+          border: $dev-border;
+        }
+        .take-to-basket-btn{
+          border: $dev-border;
+        }
+      }
     }
   }
 }
 
 .footer {
-  border: 1px red solid;
+  border: $dev-border;
   max-width: $max-block-height;
   width: $blocks-width;
   height: auto;
@@ -90,13 +157,13 @@ $max-block-height: 1920px;
     margin: auto;
     padding: 5% 0 5% 0;
     .git-hub{
-      border: 1px red solid;
+      border: $dev-border;
     }
     .e-mail{
-      border: 1px red solid;
+      border: $dev-border;
     }
     .tel{
-      border: 1px red solid;
+      border: $dev-border;
     }
   }
 }
