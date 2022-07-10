@@ -29,10 +29,15 @@ export class TempComponent{
   public basket = Basket;
 }
 
+import {counterInBasket} from './basket';
+import {clearingBasket} from "./basket";
 
-function greeter(): string {
-  return "Hello world!"
-}
+counterInBasket
 
-console.log(greeter())
+clearingBasket
+
+
+
+
+
 

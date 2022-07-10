@@ -1,6 +1,11 @@
+// Variables
 
 $blocks-width: 95%;
+
 $max-block-height: 1920px;
+
+$dev-border: none;
+
 @mixin grid-column {
   display: grid;
   grid-template-columns: 2fr 1fr;
@@ -10,7 +15,17 @@ $max-block-height: 1920px;
   gap: 1%;
   padding: 1%;
 }
-$dev-border: none;
+
+@mixin item-params {
+  font-size: 2.5vmin;
+  font-weight: bold;
+  color: #444242;
+  text-align: center;
+  margin: 0;
+}
+
+
+// Default styles
 
 body {
   background-color: #f8f9f9f1;
@@ -22,6 +37,7 @@ h1, p, a {
   color: #444242;
 }
 
+// styles
 
 .header{
   border: $dev-border;
@@ -71,6 +87,11 @@ h1, p, a {
     .in-basket{
       background-image: url(../dist/src/assets/photoList/basket..png);
       background-size: cover;
+      font-family: 'Roboto', sans-serif;
+      color: red;
+      font-weight: bold;
+      font-size: x-large;
+      text-align: right;
     }
     .clear-basket{
       .clr-bskt-text{
@@ -154,6 +175,7 @@ h1, p, a {
         height: auto;
         .pag-img{
           border: $dev-border;
+          background-color: #fff;
           .pag-imgs{
             display: block;
             margin: 0 auto;
@@ -174,7 +196,7 @@ h1, p, a {
         .pag-param{
           border: $dev-border;
           display: grid;
-          grid-template-columns: 1fr 1fr;
+          grid-template-columns: 1fr 1fr 1fr;
           justify-items: stretch;
           justify-content: space-around;
           gap: 1%;
@@ -184,11 +206,7 @@ h1, p, a {
             height: 100%;
             width: 100%;
             .age-text{
-              font-size: 2.5vmin;
-              font-weight: bold;
-              color: #444242;
-              text-align: center;
-              margin: 0;
+              @include item-params;
             }
           }
           .pag-color{
@@ -196,25 +214,32 @@ h1, p, a {
             height: 100%;
             width: 100%;
             .color-text{
-              font-size: 2.5vmin;
-              font-weight: bold;
-              color: #444242;
-              text-align: center;
-              margin: 0;
+              @include item-params;
             }
           }
+          .pag-price{
+            height: 100%;
+            width: 100%;
+            .price-text{
+              @include item-params;
+            }
+          }
+          
         }
         .take-to-basket-btn{
           border: $dev-border;
           .basket-text {
             font-size: 3vmin;
             color: #444242;
+            width: 65%;
             display: block;
+            text-align: center;
             margin: 0 auto;
-            padding: 2% 25% 2% 25%;
+            font-weight: bolder;
+            padding: 2% 5% 2% 5%;
             background-color: white;
             border-radius: 5px;
-            border: 1px solid orange; 
+            border: 1px solid orange;
             cursor: pointer;
           }
           .basket-text:hover{
@@ -257,5 +282,13 @@ h1, p, a {
 
 .none {
 	display: none;
+}
+
+.pag-in-basket{
+  background-color: orange;
+}
+
+.active{
+
 }
 
