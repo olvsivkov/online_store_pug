@@ -148,6 +148,7 @@ h1, p, a {
   height: 15rem;
   margin: auto;
   height: auto;
+  
   .main-wrapper{
     border: $dev-border;
     width: 90%;
@@ -158,6 +159,16 @@ h1, p, a {
     gap: 1%;
     margin: auto;
     padding: 5% 0 7% 0;
+    @media screen and (max-width: 1000px) {
+      grid-template-columns: 1fr 1fr;
+    }
+    @media screen and (max-width: 700px) {
+      grid-template-columns: 1fr;
+    }
+    
+
+    
+    
     .card-item{
       border: $dev-border;
       height: auto;
@@ -269,6 +280,9 @@ h1, p, a {
     gap: 2%;
     margin: auto;
     padding: 5% 0 5% 0;
+    @media screen and (max-width: 700px) {
+      padding: 55% 0 5% 0;
+    }
     .links{
       border: $dev-border;
       font-size: 3vmin;
@@ -288,7 +302,5 @@ h1, p, a {
   background-color: orange;
 }
 
-.active{
 
-}
 
