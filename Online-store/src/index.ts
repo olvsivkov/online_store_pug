@@ -31,10 +31,17 @@ export class TempComponent{
 
 import {counterInBasket} from './basket';
 import {clearingBasket} from "./basket";
+import {search} from "./search";
+import {clearSearch} from "./search";
 
-counterInBasket
 
-clearingBasket
+counterInBasket // добавляет\удаляет мопсов в/из корзины по одному
+
+clearingBasket // полностью очищает корзину
+
+search // поиск по странице
+
+clearSearch // очистить строку поиска
 
 
 
