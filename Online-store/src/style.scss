@@ -8,7 +8,6 @@ $dev-border: none;
 
 @mixin grid-column {
   display: grid;
-  grid-template-columns: 2fr 1fr;
   justify-items: end;
   justify-content: end;
   height: 4rem;
@@ -22,6 +21,28 @@ $dev-border: none;
   color: #444242;
   text-align: center;
   margin: 0;
+}
+
+@mixin sort-btn-style {
+  height: 3rem;
+  width: 10rem;
+  margin: 0;
+  text-align: center;
+  line-height: 222%;
+  cursor: pointer;
+  background-color: white;
+  border-radius: 5px;
+  border: 1px solid orange; 
+  font-family: 'Roboto', sans-serif;
+  color: #444242;
+}
+
+@mixin hover {
+  background-color: rgb(247, 196, 103);
+}
+
+@mixin active {
+  background-color: rgb(250, 117, 69);
 }
 
 
@@ -46,12 +67,72 @@ h1, p, a {
   height: auto;
   margin: auto;
   background-color: white;
+  @media screen and (max-width: 1000px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1px;
+    height: 17rem;
+  }
+  @media screen and (max-width: 700px) {
+    height: auto;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: none;
+  }
   .header-band{
     @include grid-column;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    @media screen and (max-width: 1000px) {
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-template-columns: none;
+    }
+    @media screen and (max-width: 700px) {
+      height: 4rem;
+      height: 15rem;
+    }
+   
   }
-  .search{
+    .sort{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 3px;
+      .sort-btn{
+        @include sort-btn-style;
+      }
+      .sort-btn:hover {
+        @include hover;
+      }
+      .sort-btn:active{
+        @include active;
+      }
+      .sort-btn-reverse{
+        @include sort-btn-style;
+      }
+      .sort-btn-reverse:hover {
+        @include hover;
+      }
+      .sort-btn-reverse:active{
+        @include active;
+      }
+      .sort-btn-age{
+        @include sort-btn-style;
+      }
+      .sort-btn-age:hover {
+        @include hover;
+      }
+      .sort-btn-age:active{
+        @include active;
+      }
+    }
+    .search{
     border: $dev-border;
     @include grid-column;
+    grid-template-columns: 2fr 1fr;
+    @media screen and (max-width: 1000px) {
+      width: 25rem;
+      justify-items: stretch;
+    }
+    
     .input-search{
       height: 50%;
     }
@@ -67,6 +148,7 @@ h1, p, a {
         background-color: white;
         border-radius: 5px;
         border: 1px solid orange; 
+        width: 5rem;
       }
       .srch-btn-text:hover{
         background-color: rgb(247, 196, 103);
@@ -79,8 +161,8 @@ h1, p, a {
   .basket{
     border: $dev-border;
     width: auto;
-    height: 100%;
-    width: 20%;
+    height: 7rem;
+    width: 5rem;
     display: grid;
     grid-template-rows: 2fr 1fr;
     margin: auto;
@@ -92,6 +174,7 @@ h1, p, a {
       font-weight: bold;
       font-size: x-large;
       text-align: right;
+      height: 90px;
     }
     .clear-basket{
       .clr-bskt-text{
@@ -117,12 +200,18 @@ h1, p, a {
     width: 60%;
     margin: auto;
     margin-top: 3%;
+    grid-row: 1;
 
     .title-img {
       width: 50%;
       display: block;
       margin: auto;
+      @media screen and (max-width: 1000px) {
+        width: 9rem;
+      }
     }
+    
+    
 
     h1{
       width: 50%;
@@ -171,7 +260,7 @@ h1, p, a {
     
     .card-item{
       border: $dev-border;
-      height: auto;
+      height: 100%;
       width: 90%;
       margin: auto;
       background-color: #ffffff;
@@ -184,9 +273,11 @@ h1, p, a {
         grid-template-rows: 4fr 0.5fr 0.5fr 0.5fr;
         gap: 1%;
         height: auto;
+        height: 95%;
         .pag-img{
           border: $dev-border;
           background-color: #fff;
+          height: auto;
           .pag-imgs{
             display: block;
             margin: 0 auto;
@@ -282,6 +373,9 @@ h1, p, a {
     padding: 5% 0 5% 0;
     @media screen and (max-width: 700px) {
       padding: 55% 0 5% 0;
+    }
+    .e-mail{
+      text-align: end;
     }
     .links{
       border: $dev-border;

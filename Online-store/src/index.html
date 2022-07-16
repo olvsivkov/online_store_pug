@@ -13,6 +13,11 @@
 <body>
   <header class="header">
     <div class="header-band">
+      <div class="sort">
+        <input type="button" class="sort-btn" value="price to hight"></input>
+        <input type="button" class="sort-btn-reverse" value="price to low"></input>
+        <input type="button" class="sort-btn-age" value="sort age"></input>
+      </div>
       <div class="search">
         <input class="input-search" type="text" id="inputSearch" placeholder="more then 2 sumbols...">
         <div class="search-btn">
@@ -36,7 +41,7 @@
 
   <main class = "main">
     <div class="main-wrapper">
-      <div class="card-item card" >
+      <div class="card-item card" data-price="35" data-age="24">
         <div class="card-item-wripper">
           <div class="pag-img Pag1">
             <img class="pag-imgs" src="../dist/src/assets/photoList/Pag1..jpg" alt="Pag1">
@@ -46,7 +51,7 @@
           </div>
           <div class="pag-param">
             <div class="pag-age">
-              <p class="age-text" data-age="0">2 years</p>
+              <p class="age-text" >2 years</p>
             </div>
             <div class="pag-color">
               <p class="color-text" data-scope="0">White</p>
@@ -60,7 +65,7 @@
           </div>
         </div>
       </div>
-      <div class="card-item card" >
+      <div class="card-item card" data-price="61" data-age="3">
         <div class="card-item-wripper">
           <div class="pag-img">
             <img class="pag-imgs" src="../dist/src/assets/photoList/Pag2..png" alt="pag 2">
@@ -70,7 +75,7 @@
           </div>
           <div class="pag-param">
             <div class="pag-age">
-              <p class="age-text" data-age="0">3 mounths</p>
+              <p class="age-text" >3 mounths</p>
             </div>
             <div class="pag-color">
               <p class="color-text" data-scope="0">White</p>
@@ -84,7 +89,7 @@
           </div>
         </div>
       </div>
-      <div class="card-item card" >
+      <div class="card-item card" data-price="58" data-age="4"> 
         <div class="card-item-wripper">
           <div class="pag-img">
             <img class="pag-imgs" src="../dist/src/assets/photoList/Pag3..png" alt="pag 3">
@@ -94,7 +99,7 @@
           </div>
           <div class="pag-param">
             <div class="pag-age">
-              <p class="age-text" data-age="0">4 mounths</p>
+              <p class="age-text" >4 mounths</p>
             </div>
             <div class="pag-color">
               <p class="color-text" data-scope="0">Black</p>
@@ -108,7 +113,7 @@
           </div>
         </div>
       </div>
-      <div class="card-item card" >
+      <div class="card-item card" data-price="17" data-age="36">
         <div class="card-item-wripper">
           <div class="pag-img">
             <img class="pag-imgs" src="../dist/src/assets/photoList/Pag4..png" alt="pag 4">
@@ -118,7 +123,7 @@
           </div>
           <div class="pag-param">
             <div class="pag-age">
-              <p class="age-text" data-age="0">3 years</p>
+              <p class="age-text" >3 years</p>
             </div>
             <div class="pag-color">
               <p class="color-text" data-scope="0">White</p>
@@ -132,7 +137,7 @@
           </div>
         </div>
       </div>
-      <div class="card-item card" >
+      <div class="card-item card" data-price="55" data-age="84">
         <div class="card-item-wripper">
           <div class="pag-img">
             <img class="pag-imgs" src="../dist/src/assets/photoList/Pag5..jpg" alt="pag 5">
@@ -142,7 +147,7 @@
           </div>
           <div class="pag-param">
             <div class="pag-age">
-              <p class="age-text" data-age="0">7 years</p>
+              <p class="age-text" >7 years</p>
             </div>
             <div class="pag-color">
               <p class="color-text" data-scope="0">White</p>
@@ -156,7 +161,7 @@
           </div>
         </div>
       </div>
-      <div class="card-item card" >
+      <div class="card-item card" data-price="23" data-age="24">
         <div class="card-item-wripper">
           <div class="pag-img">
             <img class="pag-imgs" src="../dist/src/assets/photoList/Pag6..jpg" alt="pag 6">
@@ -166,7 +171,7 @@
           </div>
           <div class="pag-param">
             <div class="pag-age">
-              <p class="age-text" data-age="0">2 years</p>
+              <p class="age-text" >2 years</p>
             </div>
             <div class="pag-color">
               <p class="color-text" data-scope="0">White</p>
@@ -180,7 +185,7 @@
           </div>
         </div>
       </div>
-      <div class="card-item card" >
+      <div class="card-item card" data-price="25" data-age="36">
         <div class="card-item-wripper">
           <div class="pag-img">
             <img class="pag-imgs" src="../dist/src/assets/photoList/Pag7..png" alt="pag 7">
@@ -190,7 +195,7 @@
           </div>
           <div class="pag-param">
             <div class="pag-age">
-              <p class="age-text" data-age="0">3 years</p>
+              <p class="age-text" >3 years</p>
             </div>
             <div class="pag-color">
               <p class="color-text" data-scope="0">White</p>
@@ -204,7 +209,7 @@
           </div>
         </div>
       </div>
-      <div class="card-item card" >
+      <div class="card-item card" data-price="15" data-age="48">
         <div class="card-item-wripper">
           <div class="pag-img">
             <img class="pag-imgs" src="../dist/src/assets/photoList/Pag8..jpg" alt="pag 8">
@@ -214,7 +219,7 @@
           </div>
           <div class="pag-param">
             <div class="pag-age">
-              <p class="age-text" data-age="0">4 years</p>
+              <p class="age-text" >4 years</p>
             </div>
             <div class="pag-color">
               <p class="color-text" data-scope="0">White</p>
@@ -228,7 +233,7 @@
           </div>
         </div>
       </div>
-      <div class="card-item card" >
+      <div class="card-item card" data-price="59" data-age="9">
         <div class="card-item-wripper">
           <div class="pag-img">
             <img class="pag-imgs" src="../dist/src/assets/photoList/Pag9..jpg" alt="pag 9">
@@ -238,7 +243,7 @@
           </div>
           <div class="pag-param">
             <div class="pag-age">
-              <p class="age-text" data-age="0">9 mounths</p>
+              <p class="age-text" >9 mounths</p>
             </div>
             <div class="pag-color">
               <p class="color-text" data-scope="0">Black</p>
@@ -252,7 +257,7 @@
           </div>
         </div>
       </div>
-      <div class="card-item card" >
+      <div class="card-item card" data-price="45" data-age="48">
         <div class="card-item-wripper">
           <div class="pag-img">
             <img class="pag-imgs" src="../dist/src/assets/photoList/Pag10..jpg" alt="pag 10">
@@ -262,7 +267,7 @@
           </div>
           <div class="pag-param">
             <div class="pag-age">
-              <p class="age-text" data-age="0">4 years</p>
+              <p class="age-text" >4 years</p>
             </div>
             <div class="pag-color">
               <p class="color-text" data-scope="0">White</p>

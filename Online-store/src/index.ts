@@ -33,6 +33,10 @@ import {counterInBasket} from './basket';
 import {clearingBasket} from "./basket";
 import {search} from "./search";
 import {clearSearch} from "./search";
+import {mySort} from "./sorting";
+import {mySortReverse} from "./sorting";
+import {mySortAge} from "./sorting";
+import { replace } from "lodash";
 
 
 counterInBasket // добавляет\удаляет мопсов в/из корзины по одному
@@ -43,6 +47,11 @@ search // поиск по странице
 
 clearSearch // очистить строку поиска
 
+mySort // сортировка по возрастанию цены
+
+mySortReverse // сортировка по убыванию цены
+
+mySortAge // сортировка по возрасту
 
 
 
