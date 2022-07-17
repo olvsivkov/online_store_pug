@@ -1,4 +1,4 @@
-# task: shelter: olvsivkov-JSFE2022Q1
+# task: shelter
 Private repository for @olvsivkov
 https://rolling-scopes-school.github.io/olvsivkov-JSFE2022Q1/shelter/pages/main/index.html
 
