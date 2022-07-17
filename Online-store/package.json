@@ -30,5 +30,6 @@
     "gh-pages": "^4.0.0",
     "normalize.css": "^8.0.1"
   },
-  "homepage": "https://rolling-scopes-school.github.io/olvsivkov-JSFE2022Q1"
+  "homepage": "https://rolling-scopes-school.github.io/olvsivkov-JSFE2022Q1",
+  "files": ["dist/*.js", "dist/**/*.js"]
 }
