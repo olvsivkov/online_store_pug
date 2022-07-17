@@ -98,6 +98,8 @@ h1, p, a {
       gap: 3px;
       .sort-btn{
         @include sort-btn-style;
+        font-size: larger;
+        font-weight: bold;
       }
       .sort-btn:hover {
         @include hover;
@@ -107,6 +109,8 @@ h1, p, a {
       }
       .sort-btn-reverse{
         @include sort-btn-style;
+        font-size: larger;
+        font-weight: bold;
       }
       .sort-btn-reverse:hover {
         @include hover;
@@ -116,6 +120,8 @@ h1, p, a {
       }
       .sort-btn-age{
         @include sort-btn-style;
+        font-size: larger;
+        font-weight: bold;
       }
       .sort-btn-age:hover {
         @include hover;
@@ -149,6 +155,8 @@ h1, p, a {
         border-radius: 5px;
         border: 1px solid orange; 
         width: 5rem;
+        font-size: larger;
+        font-weight: bold;
       }
       .srch-btn-text:hover{
         background-color: rgb(247, 196, 103);
@@ -186,6 +194,8 @@ h1, p, a {
         border-radius: 5px;
         border: 1px solid orange; 
         padding: 5% 5% 5% 5%;
+        font-size: larger;
+        font-weight: bold;
       }
       .clr-bskt-text:hover{
         background-color: rgb(247, 196, 103);
@@ -226,6 +236,8 @@ h1, p, a {
       text-align: center;
       padding: 2%;
       text-decoration: underline;
+      font-size: larger;
+      font-weight: bold;
     }
   }
 }

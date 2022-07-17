@@ -17,6 +17,7 @@ export function counterInBasket(){  // первый if проверяет кли
       targetElem2.style.backgroundColor = "#ffffff"
 
       counter--; // отнимаем цифры на счетчике корзины (если есть)
+      //console.log(counter)
       if (counter === 0) { // если счетчик дошел до 0, то в корзину вставляем пустое значение (пользователь ничего не увидит)
         inBasket.innerText = " "
       }
@@ -29,13 +30,13 @@ export function counterInBasket(){  // первый if проверяет кли
       e.innerHTML = "in Basket"
 
       counter++;
+      //console.log(counter)
       inBasket.innerText = counter.toString();
     }
     
   })});
 }
 counterInBasket()
-
 // полностью очищаем корзину от мопсов
 
 const clearBasket = <HTMLElement>document.querySelector(".clear-basket")
