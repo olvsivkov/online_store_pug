@@ -1,0 +1,112 @@
+.header {
+  border: 1px red solid;
+  max-width: 1920px;
+  width: 95%;
+  height: auto;
+  margin: auto;
+}
+
+.header .header-band {
+  display: grid;
+  grid-template-columns: 15% 15%;
+  justify-items: end;
+  justify-content: end;
+  height: 4rem;
+  gap: 1%;
+  padding: 1%;
+}
+
+.header .search {
+  border: 1px red solid;
+}
+
+.header .basket {
+  border: 1px red solid;
+  width: 15%;
+}
+
+.header .heading-wrapper {
+  border: 1px red solid;
+  width: 60%;
+  margin: auto;
+  margin-top: 3%;
+}
+
+.header .heading-wrapper img {
+  width: 50%;
+  margin: auto;
+}
+
+.header .heading-wrapper h1 {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+}
+
+.header .heading-wrapper p {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  padding: 2%;
+}
+
+.main {
+  border: 1px red solid;
+  max-width: 1920px;
+  width: 95%;
+  height: 15rem;
+  margin: auto;
+  height: auto;
+}
+
+.main .main-wrapper {
+  border: 1px red solid;
+  width: 90%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: stretch;
+  justify-content: space-around;
+  gap: 2%;
+  margin: auto;
+  padding: 5% 0 5% 0;
+}
+
+.main .main-wrapper .card-item {
+  border: 1px red solid;
+  height: 15rem;
+}
+
+.footer {
+  border: 1px red solid;
+  max-width: 1920px;
+  width: 95%;
+  height: auto;
+  margin: auto;
+}
+
+.footer .footer-wrapper {
+  width: 95%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: stretch;
+  justify-content: space-around;
+  gap: 2%;
+  margin: auto;
+  padding: 5% 0 5% 0;
+}
+
+.footer .footer-wrapper .git-hub {
+  border: 1px red solid;
+}
+
+.footer .footer-wrapper .e-mail {
+  border: 1px red solid;
+}
+
+.footer .footer-wrapper .tel {
+  border: 1px red solid;
+}
+
+.none {
+  display: none;
+}

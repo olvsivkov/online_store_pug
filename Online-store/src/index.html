@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+ 
+  <title>Pug shop</title>
+</head>
+<body>
+  <header class="header">
+    <div class="header-band">
+      <div class="sort">
+        <input type="button" class="sort-btn" value="price to hight"></input>
+        <input type="button" class="sort-btn-reverse" value="price to low"></input>
+        <input type="button" class="sort-btn-age" value="sort age"></input>
+      </div>
+      <div class="search">
+        <input class="input-search" type="text" id="inputSearch" placeholder="more then 2 sumbols...">
+        <div class="search-btn">
+          <p class="srch-btn-text">Clear</p>
+        </div>
+      </div>
+      <div class="basket">
+        <div class="in-basket">
+        </div>
+        <div class="clear-basket">
+          <p class="clr-bskt-text">Clear</p>
+        </div>
+      </div>
+    </div>
+    <div class="heading-wrapper">
+      <img class="title-img" src="../dist/src/assets/photoList/Pag-Logo..jpg" alt="logo-picture">
+      <h1>Pug shop</h1>
+      <p class="under-title">You can buy friendship!</p>
+    </div>
+  </header>
+
+  <main class = "main">
+    <div class="main-wrapper">
+      <div class="card-item card" data-price="35" data-age="24">
+        <div class="card-item-wripper">
+          <div class="pag-img Pag1">
+            <img class="pag-imgs" src="../dist/src/assets/photoList/Pag1..jpg" alt="Pag1">
+          </div>
+          <div class="pag-name">
+            <p class="name-text" data-name="0">Archy</p> 
+          </div>
+          <div class="pag-param">
+            <div class="pag-age">
+              <p class="age-text" >2 years</p>
+            </div>
+            <div class="pag-color">
+              <p class="color-text" data-scope="0">White</p>
+            </div>
+            <div class="pag-price">
+              <p class="price-text" data-scope="0">35 $</p>
+            </div>
+          </div>
+          <div class="take-to-basket-btn">
+            <p class="basket-text">Buy now</p>
+          </div>
+        </div>
+      </div>
+      <div class="card-item card" data-price="61" data-age="3">
+        <div class="card-item-wripper">
+          <div class="pag-img">
+            <img class="pag-imgs" src="../dist/src/assets/photoList/Pag2..png" alt="pag 2">
+          </div>
+          <div class="pag-name">
+            <p class="name-text" data-name="0">Osvald</p> 
+          </div>
+          <div class="pag-param">
+            <div class="pag-age">
+              <p class="age-text" >3 mounths</p>
+            </div>
+            <div class="pag-color">
+              <p class="color-text" data-scope="0">White</p>
+            </div>
+            <div class="pag-price">
+              <p class="price-text" data-scope="0">61 $</p>
+            </div>
+          </div>
+          <div class="take-to-basket-btn">
+            <p class="basket-text">Buy now</p>
+          </div>
+        </div>
+      </div>
+      <div class="card-item card" data-price="58" data-age="4"> 
+        <div class="card-item-wripper">
+          <div class="pag-img">
+            <img class="pag-imgs" src="../dist/src/assets/photoList/Pag3..png" alt="pag 3">
+          </div>
+          <div class="pag-name">
+            <p class="name-text" data-name="0">Hachiko</p> 
+          </div>
+          <div class="pag-param">
+            <div class="pag-age">
+              <p class="age-text" >4 mounths</p>
+            </div>
+            <div class="pag-color">
+              <p class="color-text" data-scope="0">Black</p>
+            </div>
+            <div class="pag-price">
+              <p class="price-text" data-scope="0">58 $</p>
+            </div>
+          </div>
+          <div class="take-to-basket-btn">
+            <p class="basket-text">Buy now</p>
+          </div>
+        </div>
+      </div>
+      <div class="card-item card" data-price="17" data-age="36">
+        <div class="card-item-wripper">
+          <div class="pag-img">
+            <img class="pag-imgs" src="../dist/src/assets/photoList/Pag4..png" alt="pag 4">
+          </div>
+          <div class="pag-name">
+            <p class="name-text" data-name="0">Oscar</p> 
+          </div>
+          <div class="pag-param">
+            <div class="pag-age">
+              <p class="age-text" >3 years</p>
+            </div>
+            <div class="pag-color">
+              <p class="color-text" data-scope="0">White</p>
+            </div>
+            <div class="pag-price">
+              <p class="price-text" data-scope="0">17 $</p>
+            </div>
+          </div>
+          <div class="take-to-basket-btn">
+            <p class="basket-text">Buy now</p>
+          </div>
+        </div>
+      </div>
+      <div class="card-item card" data-price="55" data-age="84">
+        <div class="card-item-wripper">
+          <div class="pag-img">
+            <img class="pag-imgs" src="../dist/src/assets/photoList/Pag5..jpg" alt="pag 5">
+          </div>
+          <div class="pag-name">
+            <p class="name-text" data-name="0">Skipper</p> 
+          </div>
+          <div class="pag-param">
+            <div class="pag-age">
+              <p class="age-text" >7 years</p>
+            </div>
+            <div class="pag-color">
+              <p class="color-text" data-scope="0">White</p>
+            </div>
+            <div class="pag-price">
+              <p class="price-text" data-scope="0">55 $</p>
+            </div>
+          </div>
+          <div class="take-to-basket-btn">
+            <p class="basket-text">Buy now</p>
+          </div>
+        </div>
+      </div>
+      <div class="card-item card" data-price="23" data-age="24">
+        <div class="card-item-wripper">
+          <div class="pag-img">
+            <img class="pag-imgs" src="../dist/src/assets/photoList/Pag6..jpg" alt="pag 6">
+          </div>
+          <div class="pag-name">
+            <p class="name-text" data-name="0">Matthew</p> 
+          </div>
+          <div class="pag-param">
+            <div class="pag-age">
+              <p class="age-text" >2 years</p>
+            </div>
+            <div class="pag-color">
+              <p class="color-text" data-scope="0">White</p>
+            </div>
+            <div class="pag-price">
+              <p class="price-text" data-scope="0">23 $</p>
+            </div>
+          </div>
+          <div class="take-to-basket-btn">
+            <p class="basket-text">Buy now</p>
+          </div>
+        </div>
+      </div>
+      <div class="card-item card" data-price="25" data-age="36">
+        <div class="card-item-wripper">
+          <div class="pag-img">
+            <img class="pag-imgs" src="../dist/src/assets/photoList/Pag7..png" alt="pag 7">
+          </div>
+          <div class="pag-name">
+            <p class="name-text" data-name="0">Ken</p> 
+          </div>
+          <div class="pag-param">
+            <div class="pag-age">
+              <p class="age-text" >3 years</p>
+            </div>
+            <div class="pag-color">
+              <p class="color-text" data-scope="0">White</p>
+            </div>
+            <div class="pag-price">
+              <p class="price-text" data-scope="0">25 $</p>
+            </div>
+          </div>
+          <div class="take-to-basket-btn">
+            <p class="basket-text">Buy now</p>
+          </div>
+        </div>
+      </div>
+      <div class="card-item card" data-price="15" data-age="48">
+        <div class="card-item-wripper">
+          <div class="pag-img">
+            <img class="pag-imgs" src="../dist/src/assets/photoList/Pag8..jpg" alt="pag 8">
+          </div>
+          <div class="pag-name">
+            <p class="name-text" data-name="0">Lily</p> 
+          </div>
+          <div class="pag-param">
+            <div class="pag-age">
+              <p class="age-text" >4 years</p>
+            </div>
+            <div class="pag-color">
+              <p class="color-text" data-scope="0">White</p>
+            </div>
+            <div class="pag-price">
+              <p class="price-text" data-scope="0">15 $</p>
+            </div>
+          </div>
+          <div class="take-to-basket-btn">
+            <p class="basket-text">Buy now</p>
+          </div>
+        </div>
+      </div>
+      <div class="card-item card" data-price="59" data-age="9">
+        <div class="card-item-wripper">
+          <div class="pag-img">
+            <img class="pag-imgs" src="../dist/src/assets/photoList/Pag9..jpg" alt="pag 9">
+          </div>
+          <div class="pag-name">
+            <p class="name-text" data-name="0">Daisy</p> 
+          </div>
+          <div class="pag-param">
+            <div class="pag-age">
+              <p class="age-text" >9 mounths</p>
+            </div>
+            <div class="pag-color">
+              <p class="color-text" data-scope="0">Black</p>
+            </div>
+            <div class="pag-price">
+              <p class="price-text" data-scope="0">59 $</p>
+            </div>
+          </div>
+          <div class="take-to-basket-btn">
+            <p class="basket-text">Buy now</p>
+          </div>
+        </div>
+      </div>
+      <div class="card-item card" data-price="45" data-age="48">
+        <div class="card-item-wripper">
+          <div class="pag-img">
+            <img class="pag-imgs" src="../dist/src/assets/photoList/Pag10..jpg" alt="pag 10">
+          </div>
+          <div class="pag-name">
+            <p class="name-text" data-name="0">Bob</p> 
+          </div>
+          <div class="pag-param">
+            <div class="pag-age">
+              <p class="age-text" >4 years</p>
+            </div>
+            <div class="pag-color">
+              <p class="color-text" data-scope="0">White</p>
+            </div>
+            <div class="pag-price">
+              <p class="price-text" data-scope="0">45 $</p>
+            </div>
+          </div>
+          <div class="take-to-basket-btn">
+            <p class="basket-text">Buy now</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-wrapper">
+      <div class="git-hub">
+        <a class="links" href="https://github.com/olvsivkov" target="_blank"> &copy; 2022  github</a>
+      </div>
+      <div class="e-mail">
+        <a class="links" href="https://app.rs.school/" target="_blank">Rolling Scopes School</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

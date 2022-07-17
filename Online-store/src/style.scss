@@ -1,0 +1,416 @@
+// Variables
+
+$blocks-width: 95%;
+
+$max-block-height: 1920px;
+
+$dev-border: none;
+
+@mixin grid-column {
+  display: grid;
+  justify-items: end;
+  justify-content: end;
+  height: 4rem;
+  gap: 1%;
+  padding: 1%;
+}
+
+@mixin item-params {
+  font-size: 2.5vmin;
+  font-weight: bold;
+  color: #444242;
+  text-align: center;
+  margin: 0;
+}
+
+@mixin sort-btn-style {
+  height: 3rem;
+  width: 10rem;
+  margin: 0;
+  text-align: center;
+  line-height: 222%;
+  cursor: pointer;
+  background-color: white;
+  border-radius: 5px;
+  border: 1px solid orange; 
+  font-family: 'Roboto', sans-serif;
+  color: #444242;
+}
+
+@mixin hover {
+  background-color: rgb(247, 196, 103);
+}
+
+@mixin active {
+  background-color: rgb(250, 117, 69);
+}
+
+
+// Default styles
+
+body {
+  background-color: #f8f9f9f1;
+  height: 100%;
+}
+
+h1, p, a {
+  font-family: 'Roboto', sans-serif;
+  color: #444242;
+}
+
+// styles
+
+.header{
+  border: $dev-border;
+  max-width: $max-block-height;
+  width: $blocks-width;
+  height: auto;
+  margin: auto;
+  background-color: white;
+  @media screen and (max-width: 1000px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1px;
+    height: 17rem;
+  }
+  @media screen and (max-width: 700px) {
+    height: auto;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: none;
+  }
+  .header-band{
+    @include grid-column;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    @media screen and (max-width: 1000px) {
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-template-columns: none;
+    }
+    @media screen and (max-width: 700px) {
+      height: 4rem;
+      height: 15rem;
+    }
+   
+  }
+    .sort{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 3px;
+      .sort-btn{
+        @include sort-btn-style;
+        font-size: larger;
+        font-weight: bold;
+      }
+      .sort-btn:hover {
+        @include hover;
+      }
+      .sort-btn:active{
+        @include active;
+      }
+      .sort-btn-reverse{
+        @include sort-btn-style;
+        font-size: larger;
+        font-weight: bold;
+      }
+      .sort-btn-reverse:hover {
+        @include hover;
+      }
+      .sort-btn-reverse:active{
+        @include active;
+      }
+      .sort-btn-age{
+        @include sort-btn-style;
+        font-size: larger;
+        font-weight: bold;
+      }
+      .sort-btn-age:hover {
+        @include hover;
+      }
+      .sort-btn-age:active{
+        @include active;
+      }
+    }
+    .search{
+    border: $dev-border;
+    @include grid-column;
+    grid-template-columns: 2fr 1fr;
+    @media screen and (max-width: 1000px) {
+      width: 25rem;
+      justify-items: stretch;
+    }
+    
+    .input-search{
+      height: 50%;
+    }
+    .search-btn{
+      border: $dev-border;
+      height: 56%;
+      width: 100%;
+      .srch-btn-text{
+        margin: 0;
+        text-align: center;
+        line-height: 222%;
+        cursor: pointer;
+        background-color: white;
+        border-radius: 5px;
+        border: 1px solid orange; 
+        width: 5rem;
+        font-size: larger;
+        font-weight: bold;
+      }
+      .srch-btn-text:hover{
+        background-color: rgb(247, 196, 103);
+      }
+      .srch-btn-text:active{
+        background-color: rgb(250, 117, 69);
+      }
+    }
+  }
+  .basket{
+    border: $dev-border;
+    width: auto;
+    height: 7rem;
+    width: 5rem;
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+    margin: auto;
+    .in-basket{
+      background-image: url(../dist/src/assets/photoList/basket..png);
+      background-size: cover;
+      font-family: 'Roboto', sans-serif;
+      color: red;
+      font-weight: bold;
+      font-size: x-large;
+      text-align: right;
+      height: 90px;
+    }
+    .clear-basket{
+      .clr-bskt-text{
+        border: $dev-border;
+        margin: 0;
+        text-align: center;
+        cursor: pointer;
+        background-color: white;
+        border-radius: 5px;
+        border: 1px solid orange; 
+        padding: 5% 5% 5% 5%;
+        font-size: larger;
+        font-weight: bold;
+      }
+      .clr-bskt-text:hover{
+        background-color: rgb(247, 196, 103);
+      }
+      .clr-bskt-text:active{
+        background-color: rgb(250, 117, 69);
+      }
+    }
+  }
+  .heading-wrapper{
+    border: $dev-border;
+    width: 60%;
+    margin: auto;
+    margin-top: 3%;
+    grid-row: 1;
+
+    .title-img {
+      width: 50%;
+      display: block;
+      margin: auto;
+      @media screen and (max-width: 1000px) {
+        width: 9rem;
+      }
+    }
+    
+    
+
+    h1{
+      width: 50%;
+      margin: auto;
+      text-align: center;
+      background-color: white;
+    }
+
+    .under-title {
+      width: 50%;
+      margin: auto;
+      text-align: center;
+      padding: 2%;
+      text-decoration: underline;
+      font-size: larger;
+      font-weight: bold;
+    }
+  }
+}
+
+.main {
+  border: $dev-border;
+  max-width: $max-block-height;
+  width: $blocks-width;
+  height: 15rem;
+  margin: auto;
+  height: auto;
+  
+  .main-wrapper{
+    border: $dev-border;
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: stretch;
+    justify-content: space-around;
+    gap: 1%;
+    margin: auto;
+    padding: 5% 0 7% 0;
+    @media screen and (max-width: 1000px) {
+      grid-template-columns: 1fr 1fr;
+    }
+    @media screen and (max-width: 700px) {
+      grid-template-columns: 1fr;
+    }
+    
+
+    
+    
+    .card-item{
+      border: $dev-border;
+      height: 100%;
+      width: 90%;
+      margin: auto;
+      background-color: #ffffff;
+      border: 1px solid #d1cbcb;
+      border-radius: 3px;
+      .card-item-wripper{
+        border: $dev-border;
+        padding: 1% 1% 5% 1%;
+        display: grid;
+        grid-template-rows: 4fr 0.5fr 0.5fr 0.5fr;
+        gap: 1%;
+        height: auto;
+        height: 95%;
+        .pag-img{
+          border: $dev-border;
+          background-color: #fff;
+          height: auto;
+          .pag-imgs{
+            display: block;
+            margin: 0 auto;
+            height: 15rem;
+          }
+        }
+        .pag-name{
+          border: $dev-border;
+          text-align: center;
+          .name-text{
+            font-size: 3.5vmin;
+            margin: 0;
+            font-weight: bold;
+            color: #444242;
+            border-top: 1px solid #d1cbcb;
+          }
+        }
+        .pag-param{
+          border: $dev-border;
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          justify-items: stretch;
+          justify-content: space-around;
+          gap: 1%;
+         
+          .pag-age{
+            border: $dev-border;
+            height: 100%;
+            width: 100%;
+            .age-text{
+              @include item-params;
+            }
+          }
+          .pag-color{
+            border: $dev-border;
+            height: 100%;
+            width: 100%;
+            .color-text{
+              @include item-params;
+            }
+          }
+          .pag-price{
+            height: 100%;
+            width: 100%;
+            .price-text{
+              @include item-params;
+            }
+          }
+          
+        }
+        .take-to-basket-btn{
+          border: $dev-border;
+          .basket-text {
+            font-size: 3vmin;
+            color: #444242;
+            width: 65%;
+            display: block;
+            text-align: center;
+            margin: 0 auto;
+            font-weight: bolder;
+            padding: 2% 5% 2% 5%;
+            background-color: white;
+            border-radius: 5px;
+            border: 1px solid orange;
+            cursor: pointer;
+          }
+          .basket-text:hover{
+            background-color: rgb(247, 196, 103);
+          }
+          .basket-text:active{
+            background-color: rgb(250, 117, 69);
+          }
+        }
+      }
+    }
+  }
+}
+
+.footer {
+  border: $dev-border;
+  max-width: $max-block-height;
+  width: $blocks-width;
+  height: auto;
+  margin: auto;
+  .footer-wrapper{
+    width: 95%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: stretch;
+    justify-content: space-around;
+    gap: 2%;
+    margin: auto;
+    padding: 5% 0 5% 0;
+    @media screen and (max-width: 700px) {
+      padding: 55% 0 5% 0;
+    }
+    .e-mail{
+      text-align: end;
+    }
+    .links{
+      border: $dev-border;
+      font-size: 3vmin;
+      color: #444242;
+    }
+     .links:hover{
+      color: #0c0c0c;
+     } 
+  }
+}
+
+.none {
+	display: none;
+}
+
+.pag-in-basket{
+  background-color: orange;
+}
+
+.hide {
+  display: none;
+}
+
+
+
