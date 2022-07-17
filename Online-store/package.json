@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "dev": "webpack --mode development",
-    "build": "webpack --mode production"
+    "build": "webpack --mode production",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "keywords": [
     "JS",
@@ -25,6 +27,8 @@
     "webpack-cli": "^4.10.0"
   },
   "dependencies": {
+    "gh-pages": "^4.0.0",
     "normalize.css": "^8.0.1"
-  }
+  },
+  "homepage": "https://rolling-scopes-school.github.io/olvsivkov-JSFE2022Q1"
 }

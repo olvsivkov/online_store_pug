@@ -42,7 +42,7 @@ module.exports = {
   },
   output: {
     filename: 'bundle.js',
-    path: '/',
+    path: path.resolve(__dirname, 'dist'),
     assetModuleFilename: 'src/assets/photoList/[name].[ext]'
   },
 }
