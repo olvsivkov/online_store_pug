@@ -8,7 +8,7 @@ This project use:
  - HTML.
  - webpack
 
-Pugs!!! The project of an online store of pugs. You can choose pugs, sort pugs (age, color, gender). Add to cart (cart does not work). In this small project, I practiced writing in typescript, scss and used webpack to build.
+Pugs!!! The project of an online store of pugs. You can choose pugs, sort pugs (age, price) and search by nickname in the search bar. Add to cart (cart does not work). In this small project, I practiced writing in typescript, scss and used webpack to build.
 _________________________________________________________________________
 
 # Проект Онлайн магазин мопсов
@@ -21,4 +21,4 @@ _________________________________________________________________________
  - HTML.
  - webpack
 
-Мопсы!!! Проект онлайн магазина мопсов. Вы можете выбирать мопсов, сортировать мопсов (возраст, цвет, пол). Добавлять в корзину (корзина не работает). В этом небольшом проекте я практиковался писать на typescript, scss и для сборки использовал webpack.
+Мопсы!!! Проект онлайн магазина мопсов. Вы можете выбирать мопсов, сортировать мопсов (возраст, цена) и искать по кличке в поисковой строке. Добавлять в корзину (корзина не работает). В этом небольшом проекте я практиковался писать на typescript, scss и для сборки использовал webpack.
